@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+*{
+    font-family: Tilt Warp;
+}
+
+body {
+    background-image: linear-gradient(rgb(27, 21, 32), rgb(75, 33, 75) );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header {
+    background-color: rgb(205, 45, 219);
+    border-radius: 20px;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 5px rgb(27, 19, 66);
+}
+
+main {
+    height: 1500px;
+}
+
+/*
+.listaSinEstilos {
+    list-style: ;
+}
+*/
+
+#miElementoH2 {
+    background-color: aquamarine;
+}
+
+#miOtroElementoH2 {
+    background-color: greenyellow;
+}
+
+h2 {
+    color: pink;
+    background-color: black;
+}
+
+/* SELECTOR DE CLASS (CLASE) */
+.textoRojo {
+    color: red;
+}
+
+.fondoNegro {
+    background-color: black;
+}
+
+/* SELECTOR DESCENDENTE */
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 75px;
+}
+
+header nav ul a {
+    text-decoration:none;
+    color: black;
+    text-emphasis-color: white;
+
+}
+
+h1 {
+    color: black;
+}
+
+#miDiv1 {
+    color: red;
+    border: 2px rgb(83, 32, 32) solid;
+    margin: 50px; /* valor general */
+    margin: 20px 60px; /* arriba/abajo - izquierda/derecha */
+    margin: 10px 50px 100px 250px; /* arriba derecha abajo izquierda */
+    display: inline;
+}
+
+.elementoBlock {
+    display: block;
+}
+
+
+.wizard-step {
+    display: none;
+  }
+  
+  .wizard-step:first-child {
+    display: block;
+  }
+  
