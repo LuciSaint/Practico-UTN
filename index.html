@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Primer Proyecto</title>
-        <link rel="stylesheet" type="text/css" href="./misEstilos.css"/>
-        <script type="text/javascript" src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Hoy</title>
+    <link rel="stylesheet" type="text/css" href="css\misEstilos.css"/>
     </head>
-
     <body>
-        <form id="wizard-form">
-            <div class="wizard-step">
-              <h2>Step 1</h2>
-              <label>Name:</label>
-              <input type="text" name="name">
-              <button class="next-button">Next</button>
-            </div>
-          
-            <div class="wizard-step">
-              <h2>Step 2</h2>
-              <label>Email:</label>
-              <input type="email" name="email">
-              <button class="prev-button">Previous</button>
-              <button class="next-button">Next</button>
-            </div>
-          
-            <div class="wizard-step">
-              <h2>Step 3</h2>
-              <label>Password:</label>
-              <input type="password" name="password">
-              <button class="prev-button">Previous</button>
-              <button type="submit">Submit</button>
-            </div>
-          </form>
+        <header>
+            <a href="#home">
+                <img id="headerLogo" src="img\headerlogo.png"> 
+            </a>
+            <nav>
+                <ul class="listaSinEstilos">
+                    <li><a href="#destinos">DESTINOS</a></li>
+                    <li><a href="#fechas">FECHAS</a></li>
+                    <li><a href="#financiacion">FINANCIACION</a></li>
+                    <li><a href="#reserva">RESERVA</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#contactanos">CONTACTANOS</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+            <!-- Carrusel -->
+            <div class="carousel">
+                <div class="carousel">
+                    <div class="carouselImg">
+                      <img src="img\barislider.png" alt="Imagen 1 - Bariloche">
+                      <img src="img\rioslider.png" alt="Imagen 2 - Rio">
+                      <img src="img\nyslider.png" alt="Imagen 3 - NY">
+                    </div>
+                </div>                  
+    
+        </main>
+        <footer id="contactanos">Todos los derechos reservados</footer>
+        <div class="background">
+            <div class="layer"></div>
+        </div>
+        <script type="text/javascript" src="js\main.js"></script>
     </body>
 </html>
