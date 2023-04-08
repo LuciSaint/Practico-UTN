@@ -8,40 +8,46 @@
     <link rel="stylesheet" type="text/css" href="css\misEstilos.css"/>
     </head>
     <body>
-        <header>
-            <a href="#home">
-                <img id="headerLogo" src="img\headerlogo.png"> 
-            </a>
-            <nav>
-                <ul class="listaSinEstilos">
-                    <li><a href="#destinos">DESTINOS</a></li>
-                    <li><a href="#fechas">FECHAS</a></li>
-                    <li><a href="#financiacion">FINANCIACION</a></li>
-                    <li><a href="#reserva">RESERVA</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a href="#contactanos">CONTACTANOS</a></li>
-                </ul> 
+        <header class="navegacion">
+            <div class="bannerSuperior"> 
+                <p class="textoSuperior">Exclusivo para Argentina</p>
+            </div>
+            <div class="bannerInferior">
+                <nav class="navIzquierda">
+                    <a href="#home">
+                    <img id="headerLogo" src="https://i.ibb.co/wdpWBdQ/headerlogo.png"> 
+                    </a>
+                </nav>
+                <nav class="navDerecha">
+                    <ul class="listaHeader">
+                        <li><a href="#destinos">DESTINOS</a></li>
+                        <li><a href="#fechas">FECHAS</a></li>
+                        <li><a href="#financiacion">FINANCIACION</a></li>
+                        <li><a href="#reserva">RESERVA</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="#contactanos">CONTACTANOS</a></li>
+                    </ul> 
+            </div>
             </nav>
         </header>
         <main>
             <!-- Carrusel -->
-            <!-- <div class="carousel">
-                <div class="carousel">
+              <div class="contenedorCarrusel">
                     <div class="carouselImg">
-                      <img src="img\barislider.png" alt="Imagen 1 - Bariloche">
-                      <img src="img\rioslider.png" alt="Imagen 2 - Rio">
-                      <img src="img\nyslider.png" alt="Imagen 3 - NY">
+                      <img class="activo" src="https://i.ibb.co/Bs8018n/barislider.png"  alt="Imagen 1 - Bariloche"> <!--El link completo <a href="https://ibb.co/x5Vx4VF"><img src="https://i.ibb.co/Bs8018n/barislider.png" alt="barislider" border="0"></a>-->
+                      <img class="inactivo"  src="https://i.ibb.co/94TNB0h/rioslider.png" alt="Imagen 2 - Rio"> <!--El link completo: <a href="https://ibb.co/C97z4y6"><img src="https://i.ibb.co/94TNB0h/rioslider.png" alt="rioslider" border="0"></a>-->
+                      <img class="inactivo" src="https://i.ibb.co/ZG315rM/nyslider.png" alt="Imagen 3 - NY"> <!--El link completo: <a href="https://ibb.co/hLk1bNm"><img src="https://i.ibb.co/ZG315rM/nyslider.png" alt="nyslider" border="0"></a> -->
                     </div>
-                </div>       -->            
+                </div>                  
             <button id="anterior">Anterior</button>
             <button id="siguiente">Siguiente</button>
-            <div id="contenedorCarrusel">
+            <!-- <div id="contenedorCarrusel">
                 <h4>Este es el titulo del carrusel</h4>
                 <div>Este es un subtitulo</div>
                 <img id="imagenBari" class="divCuadrado activo" src="img\barislider.png">Mi div 1</img>
                 <img id="imagenNY" class="divCuadrado inactivo" src="img\nyslider.png">Mi div 2</img>
                 <img id="imagenRio" class="divCuadrado inactivo" src="img\rioslider.png">Mi div 3</img>
-            </div>       
+            </div>   -->     
         </main>
         <footer id="contactanos">Todos los derechos reservados</footer>
         <div class="background">
