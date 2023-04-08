@@ -27,6 +27,7 @@ header {
 
 .bannerSuperior {
     display: flex;
+    justify-content: space-between;
     color: #ffffff;
     background-image: linear-gradient(#3e9dc9, #3f53ad);
     padding: 5px 0px 5px 20px;
@@ -38,7 +39,7 @@ header {
   }
 
 .textoSuperior {
-    margin: 0 20px;
+    margin: 0 50px 0 30px;
 }
 
 .bannerInferior {
