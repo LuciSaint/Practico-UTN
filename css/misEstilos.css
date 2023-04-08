@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 *{
-    font-family: Tilt Warp;
+    font-family: Roboto Condensed;
 }
 
 
@@ -19,13 +19,19 @@ body {
 
 /* header */
 
+header {
+    position: sticky;
+    top: 0;
+
+}
+
 .bannerSuperior {
     display: flex;
     color: #ffffff;
-    background-image: linear-gradient(#51b8e7, #3f53ad);
+    background-image: linear-gradient(#3e9dc9, #3f53ad);
     top: 0;
-    position: static;
     z-index: 100;
+    font-weight: 50;
   }
 
 .textoSuperior {
@@ -41,12 +47,12 @@ body {
     left: 0;
     width: 100%;
     height: 50px;
+    font-weight: bolder;
     font-size: large;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 5px 0px 5px rgb(27, 19, 66);
-    position: sticky;
     overflow: hidden;
     z-index: 100;
 }
