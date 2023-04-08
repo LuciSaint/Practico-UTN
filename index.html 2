@@ -1,0 +1,54 @@
+<!--Correccion de imagenes, se mantiene el resto del codigo-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Hoy</title>
+    <link rel="stylesheet" type="text/css" href="css\misEstilos.css"/>
+    <script type="text/javascript" src="js\main.js"></script> <!-- si les da problema pueden chequear el codigo anterior de luciano -->
+    </head>
+    <body>
+        <header>
+            <a href="#home">
+                <img id="headerLogo" src ="https://i.ibb.co/wwpnF0H/headerlogo.png"> <!--El link completo: <a href="https://ibb.co/WPBr4x9"><img src="https://i.ibb.co/wwpnF0H/headerlogo.png" alt="headerlogo" border="0"></a>-->
+            </a>
+            <nav>
+                <ul class="listaSinEstilos">
+                    <li><a href="#destinos">DESTINOS</a></li>
+                    <li><a href="#fechas">FECHAS</a></li>
+                    <li><a href="#financiacion">FINANCIACION</a></li>
+                    <li><a href="#reserva">RESERVA</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#contactanos">CONTACTANOS</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+            <!-- Carrusel -->
+             <div class="carousel">
+                <div class="carousel">
+                    <div class="carouselImg">
+                      <img src="https://i.ibb.co/Bs8018n/barislider.png" alt="Imagen 1 - Bariloche"> <!--El link completo <a href="https://ibb.co/x5Vx4VF"><img src="https://i.ibb.co/Bs8018n/barislider.png" alt="barislider" border="0"></a>-->
+                      <img src="https://i.ibb.co/94TNB0h/rioslider.png" alt="Imagen 2 - Rio"> <!--El link completo: <a href="https://ibb.co/C97z4y6"><img src="https://i.ibb.co/94TNB0h/rioslider.png" alt="rioslider" border="0"></a>-->
+                      <img src="https://i.ibb.co/ZG315rM/nyslider.png" alt="Imagen 3 - NY"> <!--El link completo: <a href="https://ibb.co/hLk1bNm"><img src="https://i.ibb.co/ZG315rM/nyslider.png" alt="nyslider" border="0"></a> -->
+                    </div>
+                </div>                  
+            <button id="anterior">Anterior</button>
+            <button id="siguiente">Siguiente</button>
+            <div id="contenedorCarrusel">
+                <h4>Este es el titulo del carrusel</h4>
+                <div>Este es un subtitulo</div>
+                <img id="imagenBari" class="divCuadrado activo" src="img\barislider.png">Mi div 1</img>
+                <img id="imagenNY" class="divCuadrado inactivo" src="img\nyslider.png">Mi div 2</img>
+                <img id="imagenRio" class="divCuadrado inactivo" src="img\rioslider.png">Mi div 3</img>
+            </div>       
+        </main>
+        <footer id="contactanos">Todos los derechos reservados</footer>
+        <div class="background">
+            <div class="layer"></div>
+        </div>
+        
+    </body>
+</html>
