@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaja Hoy</title>
     <link rel="stylesheet" type="text/css" href="css\misEstilos.css"/>
+    <script type="text/javascript" src="js\main.js"></script>
     </head>
     <body>
         <header class="navegacion">
@@ -32,28 +33,46 @@
             </nav>
         </header>
         <main>
-            <!-- Carrusel -->
-              <div class="contenedorCarrusel">
-                    <div class="carouselImg">
-                      <img class="activo" src="https://i.ibb.co/Bs8018n/barislider.png"  alt="Imagen 1 - Bariloche"> <!--El link completo <a href="https://ibb.co/x5Vx4VF"><img src="https://i.ibb.co/Bs8018n/barislider.png" alt="barislider" border="0"></a>-->
-                      <img class="inactivo"  src="https://i.ibb.co/94TNB0h/rioslider.png" alt="Imagen 2 - Rio"> <!--El link completo: <a href="https://ibb.co/C97z4y6"><img src="https://i.ibb.co/94TNB0h/rioslider.png" alt="rioslider" border="0"></a>-->
-                      <img class="inactivo" src="https://i.ibb.co/ZG315rM/nyslider.png" alt="Imagen 3 - NY"> <!--El link completo: <a href="https://ibb.co/hLk1bNm"><img src="https://i.ibb.co/ZG315rM/nyslider.png" alt="nyslider" border="0"></a> -->
+            <section id="homeSeccion" class="activo">
+                <!-- Carrusel -->
+                <div class="carouselCont">
+                    <div id="carouselImg">
+                        <img class="activo" src="https://i.ibb.co/Bs8018n/barislider.png"  alt="Imagen 1 - Bariloche"> <!--El link completo <a href="https://ibb.co/x5Vx4VF"><img src="https://i.ibb.co/Bs8018n/barislider.png" alt="barislider" border="0"></a>-->
+                        <img class="inactivo"  src="https://i.ibb.co/94TNB0h/rioslider.png" alt="Imagen 2 - Rio"> <!--El link completo: <a href="https://ibb.co/C97z4y6"><img src="https://i.ibb.co/94TNB0h/rioslider.png" alt="rioslider" border="0"></a>-->
+                        <img class="inactivo" src="https://i.ibb.co/ZG315rM/nyslider.png" alt="Imagen 3 - NY"> <!--El link completo: <a href="https://ibb.co/hLk1bNm"><img src="https://i.ibb.co/ZG315rM/nyslider.png" alt="nyslider" border="0"></a> -->
                     </div>
-                </div>                  
-            <button id="anterior">Anterior</button>
-            <button id="siguiente">Siguiente</button>
-            <!-- <div id="contenedorCarrusel">
-                <h4>Este es el titulo del carrusel</h4>
-                <div>Este es un subtitulo</div>
-                <img id="imagenBari" class="divCuadrado activo" src="img\barislider.png">Mi div 1</img>
-                <img id="imagenNY" class="divCuadrado inactivo" src="img\nyslider.png">Mi div 2</img>
-                <img id="imagenRio" class="divCuadrado inactivo" src="img\rioslider.png">Mi div 3</img>
-            </div>   -->     
+
+                    <button id="anterior">&#10094;</button>
+                    <button id="siguiente">&#10095;</button>
+
+                </div>   
+                <!-- <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->               
+                
+                <!-- <div id="contenedorCarrusel">
+                    <h4>Este es el titulo del carrusel</h4>
+                    <div>Este es un subtitulo</div>
+                    <img id="imagenBari" class="divCuadrado activo" src="img\barislider.png">Mi div 1</img>
+                    <img id="imagenNY" class="divCuadrado inactivo" src="img\nyslider.png">Mi div 2</img>
+                    <img id="imagenRio" class="divCuadrado inactivo" src="img\rioslider.png">Mi div 3</img>
+                </div>   -->     
+            </section>
         </main>
-        <footer id="contactanos">Todos los derechos reservados</footer>
+        <footer id="contactanos">
+            <p>Copyright 2023 - Todos los derechos reservados</p>
+            <nav class="navDerecha">
+                <ul class="listaFooter">
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul> 
+        </footer>
         <div class="background">
             <div class="layer"></div>
         </div>
-        <script type="text/javascript" src="js\main.js"></script>
     </body>
 </html>

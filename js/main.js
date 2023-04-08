@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   var siguiente = document.getElementById("siguiente");
   siguiente.addEventListener("click", () => {
-    var contenedor = document.getElementById("contenedorCarrusel");
+    var contenedor = document.getElementById("carouselImg");
     var elementoActivo = contenedor.querySelector(".activo");
     var elementoSiguiente = contenedor.querySelector(".activo + .inactivo")
     if(elementoSiguiente === null){
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   var anterior = document.getElementById("anterior");
   anterior.addEventListener("click", () => {
-      var contenedor = document.getElementById("contenedorCarrusel");
+      var contenedor = document.getElementById("carouselImg");
       var elementosActivables = contenedor.querySelectorAll(".activo, .inactivo");
 
       for(var i = 0; i < elementosActivables.length; i++){
@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       elementosActivables[posicionElementoAnterior].classList.remove("inactivo"); //Activo elemento anterior
       elementosActivables[posicionElementoAnterior].classList.add("activo");
   });
+  
 });
 
 
