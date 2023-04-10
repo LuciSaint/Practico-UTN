@@ -34,6 +34,9 @@
         </header>
         <main>
             <section id="reserva" class="activo">
+                <div class="tituloForm">
+                    <h1>Formulario de Reserva</h1>
+                </div>
                 <form class="form">
                     <div class="wizard">
                         <div class="wizard-bar" style="width: 0;" data-wizard-bar></div>
@@ -44,34 +47,74 @@
                         </ul>
                     </div>
                     <div class="form-content" data-form-tab>
-                        <h1>First stage</h1>
+                        <h2>Datos personales del responsable</h2>
                         <div class="form-item" data-form-item>
-                            <label for="input4" class="form-label">Label first</label>
-                            <input class="form-input" data-form-input id="input4" type="text" placeholder="Enter text">
+                            <label class="form-label">Nombre(s)</label>
+                            <input class="form-input" data-form-input type="text" name="name" placeholder="Nombre(s)">
                         </div>
                         <div class="form-item" data-form-item>
-                            <label for="input1" class="form-label">Label first</label>
-                            <input class="form-input" data-form-input id="input1" type="text" placeholder="Enter text">
+                            <label class="form-label">Apellido(s)</label>
+                            <input class="form-input" data-form-input type="text" name="lastname" placeholder="Apellido(s)">
+                        </div>
+                        <div class="form-item" data-form-item>
+                            <label class="form-label">Correo electrónico</label>
+                            <input class="form-input" data-form-input type="email" name="email" placeholder="ej: su_correo@outlook.com">
+                        </div>
+                        <div class="form-item" data-form-item>
+                            <label class="form-label">Teléfono</label>
+                            <input class="form-input" data-form-input type="email" name="email" placeholder="Código de país (ej.: +54) + Número">
+                        </div>
+                        <div class="select-item" data-select-item>
+                            <label class="form-label">Provincia de origen</label>
+                            <select name="province" id="province">
+                                <option value="buenosaires">Buenos Aires</option>
+                                <option value="caba">Ciudad Autónoma de Buenos Aires</option>
+                                <option value="catamarca">Catamarca</option>
+                                <option value="chaco">Chaco</option>
+                                <option value="chubut">Chubut</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="corrientes">Corrientes</option>
+                                <option value="entrerios">Entre Ríos</option> 
+                                <option value="formosa">Formosa</option>
+                                <option value="jujuy">Jujuy</option>
+                                <option value="lapampa">La Pampa</option>
+                                <option value="mendoza">Mendoza</option>
+                                <option value="misiones">Misiones</option>
+                                <option value="neuquen">Neuquén</option>
+                                <option value="rionegro">Río Negro</option>
+                                <option value="salta">Salta</option>
+                                <option value="sanjuan">San Juan</option>
+                                <option value="sanluis">San Luis</option>
+                                <option value="santacruz">Santa Cruz</option>
+                                <option value="santafe">Santa Fe</option>
+                                <option value="santiagodelestero">Santiago del Estero</option>
+                                <option value="tierradelfuego">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                                <option value="tucuman">Tucumán</option>
+                                <option value="" selected>Seleccione su provincia</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-content" data-form-tab>
-                        <h1>Second stage</h1>
+                        <h2>Second stage</h2>
                         <div class="form-item" data-form-item>
-                            <label for="input2" class="form-label">Label second</label>
-                            <input class="form-input" data-form-input id="input2" type="text" placeholder="Enter text">
+                            <label class="form-label">Label second</label>
+                            <input class="form-input" data-form-input type="text" placeholder="Enter text">
                         </div>
                     </div>
                     <div class="form-content" data-form-tab>
-                        <h1>Third stage</h1>
+                        <h2>Third stage</h2>
                         <div class="form-item" data-form-item>
-                            <label for="input3" class="form-label">Label third</label>
-                            <input class="form-input" data-form-input id="input3" type="text" placeholder="Enter text">
+                            <label class="form-label">Label third</label>
+                            <input class="form-input" data-form-input type="text" placeholder="Enter text">
                         </div>
                     </div>
                     <div class="form-buttons">
+                        <button class="btn bordered" type="button" data-btn-previous="true">Anterior</button>
+                        <button class="btn primary" type="button" data-btn-next="true">Siguiente</button>
+                    <!-- <div class="form-buttons">
                         <button class="btn bordered" type="button" data-btn-previous="true">Return</button>
                         <button class="btn primary" type="button" data-btn-next="true">Next</button>
-                    </div>
+                    </div> -->
                 </form>
             </section>
         </main>
