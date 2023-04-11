@@ -1,0 +1,104 @@
+<!-- Wizard-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Hoy</title>
+    <link rel="stylesheet" type="text/css" href="css\misEstilos2.css"/>
+   
+</head>
+<body>
+    <header class="navegacion">
+        <div class="bannerSuperior"> 
+            <p class="textoSuperior">Exclusivo para Argentina</p>
+            <p class="textoSuperior">tres experiencias únicas</p>
+        </div>
+        <div class="bannerInferior">
+            <nav class="navIzquierda">
+                <a href="#home">
+                <img id="headerLogo" src="https://i.ibb.co/wdpWBdQ/headerlogo.png"> 
+                </a>
+            </nav>
+            <nav class="navDerecha">
+                <ul class="listaHeader">
+                    <li><a href="https://www.youtube.com/shorts/5lbMFQryrTA">DESTINOS</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=c74jMCIuJh8">FECHAS</a></li>
+                    <li><a href="#financiacion">FINANCIACION</a></li>
+                    <li><a href="#reserva">RESERVA</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=06aq4ZPahWk">NOSOTROS</a></li>
+                    <li><a href="#contactanos">CONTACTANOS</a></li>
+                </ul> 
+        </div>
+        </nav>
+    </header>
+    <main>
+        <form class="form">
+            <div class="wizard">
+                <div class="wizard-bar" style="width: 0;" data-wizard-bar></div>
+                <ul class="wizard-list">
+                    <li class="wizard-item" data-wizard-item>1</li>
+                    <li class="wizard-item" data-wizard-item>2</li>
+                    <li class="wizard-item with-image" data-wizard-item></li>
+                </ul>
+            </div>
+            <div class="form-content" data-form-tab>
+                <h1>Datos Personales</h1>
+                <div class="form-item" data-form-item>
+                    <label for="input4" class="form-label">Nombre/s</label>
+                    <input class="form-input" data-form-input id="input4" type="text" placeholder="Escribe tu/s nombre/s">
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="input1" class="form-label">Apellido/s</label>
+                    <input class="form-input" data-form-input id="input1" type="text" placeholder="Escribe tu/s apellido/s">
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="input2" class="form-label">Año de Nacimiento</label>
+                    <input class="form-input" data-form-input id="input1" type="text" placeholder="Escribe el año">
+                    </div>
+            </div>
+            <div class="form-content" data-form-tab>
+                <h1>Datos Generales</h1>
+                <div class="form-item" data-form-item>
+                    <label for="input2" class="form-label">Correo Electrónico</label>
+                    <input class="form-input" data-form-input id="input2" type="text" placeholder="example@mail.com">
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="input2" class="form-label">Provincia</label>
+                    <input class="form-input" data-form-input id="input2" type="text" placeholder="Selecciona tu provincia"> <!-- Seccion Provincia -->
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="input2" class="form-label">Localidad</label>
+                    <input class="form-input" data-form-input id="input2" type="text" placeholder="Selecciona tu localidad"> <!-- Seccion Localidad (una o dos como mucho por provincia) -->
+                </div>
+            </div>
+            <div class="form-content" data-form-tab>
+                <h1>Medio de Pago</h1>
+                <div class="form-item" data-form-item>
+                    <label for="input3" class="form-label">Selecciona tu medio de pago</label>
+                    <input class="form-input" data-form-input id="input3" type="text" placeholder="ej(mastercard, paypal, etc)"> <!-- Seccion Medios de Pago -->
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button class="btn bordered" type="button" data-btn-previous="true">Return</button>
+                <button class="btn primary" type="button" data-btn-next="true">Next</button>
+            </div>
+        </form>
+    </main>
+    <footer id="contactanos">
+        <p>Copyright 2023 - Todos los derechos reservados</p>
+        <nav class="navDerecha">
+            <ul class="listaFooter">
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul> 
+    </footer>
+    <div class="background">
+        <div class="layer"></div>
+    </div>
+    <script type="text/javascript" src="js\main2.js"></script>
+    
+</body>
+</html>
