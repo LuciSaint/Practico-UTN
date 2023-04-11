@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaja Hoy</title>
     <!-- <link rel="stylesheet" type="text/css" href="css\misEstilos.css"/> -->
-    <link rel="stylesheet" href="/css/pruebaflexbox.css">
-    <script type="text/javascript" src="js\main.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
+        <!-- <script type="text/javascript" src="js\main.js"></script> -->
         <header class="navegacion">
             <div class="bannerSuperior"> 
                 <p class="textoSuperior">Exclusivo para Argentina</p>
@@ -26,30 +26,47 @@
                 </nav>
                 <nav class="navDerecha">
                     <ul class="listaHeader">
-                        <li><a href="#destinos">DESTINOS</a></li>
-                        <li><a href="#fechas">FECHAS</a></li>
-                        <li><a href="#financiacion">FINANCIACION</a></li>
-                        <li><a href="http://127.0.0.1:5500/index2.html">RESERVA</a></li>
-                        <li><a href="#nosotros">NOSOTROS</a></li>
-                        <li><a href="#contactanos">CONTACTANOS</a></li>
+                        <li class="listaItem"><a href="#destinos">DESTINOS</a></li>
+                        <li class="listaItem"><a href="#fechas">FECHAS</a></li>
+                        <li class="listaItem"><a href="#financiacion">FINANCIACION</a></li>
+                        <li class="listaItem"><a href="http://127.0.0.1:5500/index2.html">RESERVA</a></li>
+                        <li class="listaItem"><a href="#nosotros">NOSOTROS</a></li>
+                        <li class="listaItem"><a href="#contactanos">CONTACTANOS</a></li>
                     </ul> 
             </div>
             </nav>
         </header>
         <main>
             <section id="homeSeccion" class="activo">
-                <!-- Carrusel -->
-                <div class="carouselCont">
-                    <div id="carouselImg">
-                        <img class="activo" src="img/bariloche.png"  alt="Imagen 1 - Bariloche"> <!--El link completo <a href="https://ibb.co/x5Vx4VF"><img src="https://i.ibb.co/Bs8018n/barislider.png" alt="barislider" border="0"></a>-->
-                        <img class="inactivo"  src="img/rio.png" alt="Imagen 2 - Rio"> <!--El link completo: <a href="https://ibb.co/C97z4y6"><img src="https://i.ibb.co/94TNB0h/rioslider.png" alt="rioslider" border="0"></a>-->
-                        <img class="inactivo" src="img/nuevayork.png" alt="Imagen 3 - NY"> <!--El link completo: <a href="https://ibb.co/hLk1bNm"><img src="https://i.ibb.co/ZG315rM/nyslider.png" alt="nyslider" border="0"></a> -->
+                <!-- Carrusel Inicio -->
+                <!-- <div id="carouselCont" class="carouselCont">
+                    <div id="carouselImg" class="carouselImg">
+                        <div class="element"><img class="activo" src="img/bariloche.png"  alt="Imagen 1 - Bariloche"></div> -->  <!--El link completo <a href="https://ibb.co/x5Vx4VF"><img src="https://i.ibb.co/Bs8018n/barislider.png" alt="barislider" border="0"></a>-->
+                        <!-- <div class="element"><img class="inactivo"  src="img/rio.png" alt="Imagen 2 - Rio"></div> --> <!--El link completo: <a href="https://ibb.co/C97z4y6"><img src="https://i.ibb.co/94TNB0h/rioslider.png" alt="rioslider" border="0"></a>-->
+                        <!-- <div class="element"><img class="inactivo" src="img/nuevayork.png" alt="Imagen 3 - NY"></div> --> <!--El link completo: <a href="https://ibb.co/hLk1bNm"><img src="https://i.ibb.co/ZG315rM/nyslider.png" alt="nyslider" border="0"></a> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="carouselArrow">
+                    <button id="izquierda" class="izquierda">&#10094;</button>
+                    <button id="derecha" class="derecha">&#10095;</button>
+                </div> -->
+                <!-- Carrusel Fin -->
+
+                <!-- SLIDE START -->
+                <div id="slider-container" class="slider-container">
+                    <div class="slider" id="slider">
+                    <div class="slider__element"><img src="img/bariloche.png" alt="bar"></div>
+                    <div class="slider__element"><img src="img/rio.png" alt="rio"></div>
+                    <div class="slider__element"><img src="img/nuevayork.png" alt="nue"></div>
                     </div>
-
-                    <button id="anterior">&#10094;</button>
-                    <button id="siguiente">&#10095;</button>
-
-                </div>   
+                </div>
+                <div class="slider-buttons">
+                    <button id="button-left" class="button"><img src="img/flechaizquierda.png" alt="izq"></button>
+                    <button id="button-right" class="button"><img src="img/flechaderecha.png" alt="der"></button>
+                </div>
+                <script src="js/carousel.js"></script>
+                <!-- SLIDE END -->
+        
               <br>
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>

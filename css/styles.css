@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerSuperior{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 60px;
+    background-color: blueviolet;
+}
+
+.textoSuperior{
+    font-size: 14px;
+}
+
+.bannerInferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px 14px;
+    background-color: #121212;
+    height: 70px;
+}
+
+.headerLogo{
+    width: 370px;
+    height: 41px;
+}
+
+.listaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 920px;
+    height: 41px;
+}
+
+.listaItem{
+    list-style: none;
+}
+
+.listaItem a{
+    color: #D4D4D4;
+}
+
+/* CARRUSEL */
+
+*{
+    box-sizing: border-box;
+}
+  
+:root {
+    --slide-transform: 0;
+    --transition: transform 1s;
+}
+  
+.slider-container {
+    width: 100%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+  
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: translateX(var(--slide-transform));
+    transition: var(--transition);
+}
+  
+.slider__element {
+    min-width: 100%;
+}
+  
+.slider__element img{
+    width: 100%;
+    height: 100%;
+}
+  
+.slider-buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: -350px;
+}
+  
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.button img{
+    width: 40px;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+  
+.button:active {
+    transform: scale(0.9);
+}
