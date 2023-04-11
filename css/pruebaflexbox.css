@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerSuperior{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 50px;
+    background-color: blueviolet;
+}
+
+.bannerInferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+}
+
+.headerLogo{
+    width: 500px;
+}
