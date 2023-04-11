@@ -13,30 +13,32 @@
         <header class="navegacion">
             <div class="bannerSuperior"> 
                 <p class="textoSuperior">Exclusivo para Argentina</p>
-                <p class="textoSuperior">tres experiencias únicas</p>
+                <p class="textoSuperior">tres experiencias únicas...</p>
             </div>
             <div class="bannerInferior">
                 <nav class="navIzquierda">
-                    <a href="http://127.0.0.1:5500/index.html">
+                    <a href="home.html">
                         <img class="headerLogo" id="headerLogo" src="/img/viajaHoy.png"> 
                     </a>
                 </nav>
                 <nav class="navDerecha">
                     <ul class="listaHeader">
-                        <li class="listaItem"><a href="destinos.html">DESTINOS</a></li>
-                        <li class="listaItem"><a href="#fechas">FECHAS</a></li>
-                        <li class="listaItem"><a href="#financiacion">FINANCIACION</a></li>
-                        <li class="listaItem"><a href="http://127.0.0.1:5500/index2.html">RESERVA</a></li>
-                        <li class="listaItem"><a href="#nosotros">NOSOTROS</a></li>
-                        <li class="listaItem"><a href="#contactanos">CONTACTANOS</a></li>
+                        <li class="itemHeader"><a href="destinos.html">DESTINOS</a></li>
+                        <li class="itemHeader"><a href="#fechas">FECHAS</a></li>
+                        <li class="itemHeader"><a href="#financiacion">FINANCIACION</a></li>
+                        <li class="itemHeader"><a href="http://127.0.0.1:5500/index2.html">RESERVA</a></li>
+                        <li class="itemHeader"><a href="#nosotros">NOSOTROS</a></li>
+                        <li class="itemHeader"><a href="#contactanos">CONTACTANOS</a></li>
                     </ul> 
             </div>
             </nav>
         </header>
+
+
         <main>
             <section id="homeSeccion" class="activo">
 
-                <!-- SLIDE START -->
+                <!-- CARRUSEL INICIO -->
                 <div id="slider-container" class="slider-container">
                     <div class="slider" id="slider">
                     <div class="slider__element"><img src="img/bariloche.png" alt="bar"></div>
@@ -45,11 +47,11 @@
                     </div>
                 </div>
                 <div class="slider-buttons">
-                    <button id="button-left" class="button"><img src="img/flechaizquierda.png" alt="izq"></button>
-                    <button id="button-right" class="button"><img src="img/flechaderecha.png" alt="der"></button>
+                    <button id="button-left" class="button left"><img src="img/flechaizquierda.png" alt="izq"></button>
+                    <button id="button-right" class="button right"><img src="img/flechaderecha.png" alt="der"></button>
                 </div>
                 <script src="js/carousel.js"></script>
-                <!-- SLIDE END -->
+                <!-- CARRUCEL FINAL -->
         
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
@@ -59,17 +61,21 @@
                 
             </section>
         </main>
+
+
         <footer id="contactanos" class="footer">
-            <p>Copyright 2023 - Todos los derechos reservados</p>
-            <nav class="navDerecha">
+            <nav class="navFooter">
                 <ul class="listaFooter">
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li><a href="https://twitter.com/">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/">Instagram</a></li>
-                </ul> 
+                    <li class="itemsFooter"><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li class="itemsFooter"><a href="https://twitter.com/">Twitter</a></li>
+                    <li class="itemsFooter"><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li class="itemsFooter"><a href="#gmail">Correo</a></li>
+                    <li class="itemsFooter"><a href="#copyright">© 2023</a></li>
+                </ul>
+            </nav>
         </footer>
-        <div class="background">
+<!--         <div class="background">
             <div class="layer"></div>
-        </div>
+        </div> -->
     </body>
 </html>
