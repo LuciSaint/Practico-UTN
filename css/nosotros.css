@@ -12,36 +12,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 60px;
+    padding: 1px 10px;
     background: linear-gradient(#169DBF, #554EC8);
-    height: 3vh;
+    height: 2vh;
     color: #D4D4D4;
 }
 
 .textoSuperior{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .bannerInferior{
     display: flex;
     justify-content: space-between;
-    padding: 15px 60px 14px;
+    padding: 10px 170px 9px 120px;
     background-color: #121212;
     /* height: 70px; */
-    height: 10vh;
+    height: 8vh;
 }
 
 .headerLogo{
-    width: 370px;
-    height: 41px;
+    width: 350px;
+    height: 38px;
 }
 
 .listaHeader{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 920px;
-    height: 41px;
+    width: 750px;
+    height: 38px;
 }
 
 .itemHeader{
@@ -51,8 +51,7 @@
 .itemHeader a{
     color: #D4D4D4;
     font-style: italic;
-    font-weight: bolder;
-    font-size: large;
+    font-size: 1rem;
 }
 
 /* FOOTER */
@@ -61,7 +60,7 @@
     background-color: #121212;
     color: #D4D4D4;
     text-align: center;
-    height: 6vh;
+    height: 4vh;
 }
 
 .listaFooter{
@@ -70,9 +69,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 200px 0px;
-    font-size: 20px;
+    font-size: 1rem;
     list-style: none;
-    height: 6vh;
+    height: 4vh;
 }
 
 .listaFooter a{
@@ -85,3 +84,8 @@
 
 
 /* MAIN */
+
+.main{
+    height: 86vh;
+    overflow-y: auto;
+}
