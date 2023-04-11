@@ -1,0 +1,158 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    font-family: Roboto Condensed;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.bannerSuperior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 60px;
+    background: linear-gradient(#169DBF, #554EC8);
+    height: 3vh;
+    color: #D4D4D4;
+}
+
+.textoSuperior{
+    font-size: 14px;
+}
+
+.bannerInferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px 14px;
+    background-color: #121212;
+    /* height: 70px; */
+    height: 10vh;
+}
+
+.headerLogo{
+    width: 370px;
+    height: 41px;
+}
+
+.listaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 920px;
+    height: 41px;
+}
+
+.itemHeader{
+    list-style: none;
+}
+
+.itemHeader a{
+    color: #D4D4D4;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #121212;
+    color: #D4D4D4;
+    text-align: center;
+    height: 6vh;
+}
+
+.listaFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px 0px;
+    font-size: 20px;
+    list-style: none;
+    height: 6vh;
+}
+
+.listaFooter a{
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* MAIN */
+/* CARRUSEL */  
+:root {
+    --slide-transform: 0;
+    --transition: transform 1s;
+}
+  
+.slider-container {
+    width: 100vw;
+    height: 81vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+  
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: translateX(var(--slide-transform));
+    transition: var(--transition);
+}
+  
+.slider__element {
+    min-width: 100%;
+}
+  
+.slider__element img{
+    width: 100%;
+    height: 100%;
+}
+  
+.slider-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 350px;
+}
+  
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.button img{
+    width: 40px;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+  
+.button:active {
+    transform: scale(0.9);
+}
+
+.left{
+    margin: 0px 0px 0px 60px;
+}
+
+.right{
+    margin: 0px 60px 0px 0px;
+}

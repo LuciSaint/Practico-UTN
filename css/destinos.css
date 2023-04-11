@@ -1,3 +1,4 @@
+/* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 *{
     font-family: Roboto Condensed;
@@ -14,6 +15,7 @@ body{
     flex-direction: column;
 }
 
+/* HEADER */
 .bannerSuperior{
     display: flex;
     justify-content: space-between;
@@ -61,74 +63,6 @@ body{
     font-size: large;
 }
 
-/* CARRUSEL */
-  
-:root {
-    --slide-transform: 0;
-    --transition: transform 1s;
-}
-  
-.slider-container {
-    width: 100vw;
-    height: 81vh;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
-  
-.slider {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transform: translateX(var(--slide-transform));
-    transition: var(--transition);
-}
-  
-.slider__element {
-    min-width: 100%;
-}
-  
-.slider__element img{
-    width: 100%;
-    height: 100%;
-}
-  
-.slider-buttons {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-/*     margin-left: auto;
-    margin-right: auto; */
-    top: 350px;
-}
-  
-.button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-  
-.button img{
-    width: 40px;
-    height: 60px;
-    padding: 0px;
-    margin: 0px;
-}
-  
-.button:active {
-    transform: scale(0.9);
-}
-
-.left{
-    margin: 0px 0px 0px 60px;
-}
-
-.right{
-    margin: 0px 60px 0px 0px;
-}
-
-
 /* FOOTER */
 .footer{
     width: 100%;
@@ -152,4 +86,77 @@ body{
 .listaFooter a{
     text-decoration: none;
     color: #D4D4D4;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* MAIN */
+.contenedorCuadros {
+display: flex;
+
+justify-content: space-evenly ;
+margin-top: 40px;
+
+}
+
+.cuadro {
+    width: 400px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px #cfcfcf solid;
+    box-shadow: 15px 15px 15px 5px  #ababab;
+  
+    
+    
+
+  }
+
+  #rioJaneiroOculto img{
+    width: 700px;
+    
+  }
+  
+  .imgCuadros{
+    margin-top: 20px;
+    width: 360px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .oculto {
+    display: none;
+  }
+
+  .mostrar {
+    display: block;
+  }
+
+.contenidoCuadro h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    border-radius: 6px;
+    background-color: rgb(199, 199, 199) ;
+    max-width: 70%;
+    margin-left: 60px;
+
+}
+
+.contenidoOculto{
+    margin-top: 70px;
+
+    margin-left: 20px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 12px;
 }
