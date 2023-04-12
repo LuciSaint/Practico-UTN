@@ -89,3 +89,25 @@
     height: 86vh;
     overflow-y: auto;
 }
+
+.destinos-container{
+    border: 2px solid red;
+    width: 95%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar-container{
+    border: 2px solid red;
+    width: 95%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar{
+
+}
