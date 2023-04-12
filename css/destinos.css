@@ -115,8 +115,21 @@ margin-top: 40px;
   }
 
   #rioJaneiroOculto img{
-    width: 700px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 1%;
     
+  }
+  #barilocheOculto img{
+    max-width: 50%;
+    height: auto;
+    border-radius: 1%;
+  }
+  
+  #NYOculto img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 1%;
   }
   
   .imgCuadros{
@@ -149,9 +162,15 @@ margin-top: 40px;
 
 .contenidoOculto{
     margin-top: 70px;
-
     margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+   
+
+   
 }
+
+
 
 figcaption {
     font-style: italic;
