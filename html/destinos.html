@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/css/destinos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
   <title>Document</title>
 </head>
 
@@ -62,6 +68,7 @@
     </div>
     <div class="contenidoOculto">
       <div id="barilocheOculto" class="oculto">
+        <div id="contenedorInfo">
         <p>La ciudad de Bariloche se ubica al sur de Argentina, en los Andes Patagonicos. 
           Reconocida a nivel nacional e internacional como uno de los mayores centros turisticos de Sudamerica. <br> 
           Sus centros de esqui son el principal atractivo, siendo el más grande destino del continente, 
@@ -73,10 +80,14 @@
           Adornado tambien con el ecosistema de los Andes patagónicos, habitando por más de un millar de especies botánicas y unas 300 especies de animales vertebrados.</p>
         <img src="/img/lake-nahuel-huapi-patagonia.jpg">
         <figcaption>Lago Nahuel Huapi, Argentina</figcaption>
+      </div>
+      <div id="mapBari" style="height: 400px;"></div>
+
 
       </div>
 
       <div id="rioJaneiroOculto" class="oculto">
+        <div id="contenedorInfo">
         <p>Río de Janeiro es una ciudad ubicada en la costa este de Brasil, conocida por sus impresionantes paisajes,
           playas icónicas y su vibrante cultura. La ciudad es la segunda más poblada de Brasil. <br>
           Una de las principales atracciones turísticas de Río de Janeiro es el famoso Cristo Redentor, una estatua de
@@ -88,9 +99,13 @@
           Río de Janeiro es también conocida por sus playas de arena blanca, incluyendo la famosa playa de Copacabana,
           que atrae a turistas de todo el mundo. Además, la ciudad es el hogar del Carnaval de Río de Janeiro, uno de
           los festivales más grandes y animados del mundo, que se celebra cada año en febrero o marzo.</p>
+        </div>
+          <div id="mapRio" style="height: 400px;"></div>
       </div>
 
       <div id="NYOculto" class="oculto">
+        <div id="contenedorInfo">
+
         <p>La ciudad de Nueva York se ubica en la costa este de los Estados Unidos y es la urbe más poblada del país. Centro financiero, politico y económico, sede de la Organizacion de las Naciones Unidas,
             y de numerosas empresas e instituciones financieras de importancia global. 
             Nueva York ejerce su influencia a escala global en los medios de comunicación, la política, la educación, la arquitectura, el entretenimiento, las artes y la moda. 
@@ -98,16 +113,11 @@
             Su atractivo más emblematico es la Estatua de la Libertad, ubicada en la isla de la Libertad al sur de la isla de Manhattan. Fue erigida como un regalo 
             del pueblo francés al pueblo estadounidense en 1886, en conmemoracion del centenario de la Declaración de Independencia de los Estados Unidos, y tambien como un signo de amistad 
             entre las dos naciones. </p>
-        <img src="/img/Estatua-de-la-Libertad-NuevaYork.jpeg">
-        <figcaption>Estatua de la Libertad, Estados Unidos.</figcaption>
-        <p>Otra de sus imagenes icónicas la ofrece la interseccion entre la Septima Avenida y la Avenida Broadway, en la cual se integra la zona de Times Square, 
-          la más centrica de la ciudad.<br>
-          Su nombre se debe al edificio One Times Square, antigua oficina del "New York Times", el periodico más reconocido de la ciudad. Hoy en día la zona paso a conformarla una multitud de edificios financieros, teatros, 
-          hoteles, restaurantes, salas de cines y estudios de television, volviendolo un centro multicultural, un simbolo del urbanismo de Manhattan y un lugar icónico de la ciudad.
-          Sus numerosos y extendidos carteles publicitarios le dan una animacion y luminosidad como pocas veces puede apreciarse en un paisaje urbano. <br>
-          Es por ello y dados sus multiples centros de interes, congregados a lo largo de la interseccion, que la zona de Times Square es un lugar obligado para todo visitante de la urbe estadounidense. </p>
-          <img src="/img/Times-Square-NYC.jpg">
-          <figcaption>Vista Panorámica de Times Square, Estados Unidos</figcaption>
+          <img src="/img/Estatua-de-la-Libertad-NuevaYork.jpeg">
+          <figcaption>Estatua de la Libertad, Estados Unidos.</figcaption>
+        </div>
+        <div id="mapNY" style="height: 400px;"></div>
+
       </div>
     </div>
   </main>
