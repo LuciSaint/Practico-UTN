@@ -169,6 +169,7 @@ main {
     position: relative;
     display: flex;
     width: 100%;
+    margin-top: 20px;
   }
   .wizard:before {
     content: "";
@@ -210,4 +211,8 @@ main {
     justify-content: center;
     font-weight: 500;
     background-color: #f4f4f4;
+  }
+
+  fieldset {
+    border: none;
   }

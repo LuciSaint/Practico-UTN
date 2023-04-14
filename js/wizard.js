@@ -64,3 +64,5 @@ document.querySelector('*').addEventListener('click', function (event) {
 
 })
 
+fechaMaximaID.max = new Date().toISOString().split("T")[0];
+fechaMinimaID.min = new Date().toISOString().split("T")[0];
