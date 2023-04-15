@@ -89,3 +89,35 @@
     height: 86vh;
     overflow-y: auto;
 }
+.contenedorIconos{
+    height: 50px;
+    margin: 17px;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+
+
+.imgIcono{
+    height: 100px;
+    width: auto;
+    position: relative;
+    
+    
+}
+
+
+.telefono{
+    display: flex;
+    flex-direction: row;
+    font-size: 9px;
+    align-self: flex-end;
+    justify-content: space-between; /* a corregir*/
+}
+
+.telefono img{
+    height: 30px;
+}
