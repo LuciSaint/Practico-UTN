@@ -48,14 +48,15 @@
     showTab(currentTab);
   }
 
+
   function validateForm() {
     let formTabs, formInputs, i, valid = true;
     formTabs = document.querySelectorAll('[data-form-tab]');
     formInputs = formTabs[currentTab].querySelectorAll('[data-form-input]');
     let formItem = formTabs[currentTab].querySelectorAll('[data-form-item]');
-
+  
     for (i = 0; i < formInputs.length; i++) {
-      if (formInputs[i].value == "") {
+      if ((!formInputs[i].checkValidity()) ||  formInputs[i].value == "") { // use checkValidity()
         formItem[i].className += " has-error";
         valid = false;
       }
@@ -63,6 +64,8 @@
     return valid;
   }
 
+
+  
   function updateWizardBarWidth() {
     const activeWizards = document.querySelectorAll(".wizard-item.active");
     let wizardItem = document.querySelectorAll('[data-wizard-item]')
@@ -71,10 +74,13 @@
     wizardBar.style.width = currentWidth + "%";
   }
   
-  fechaMaximaID.max = new Date().toISOString().split("T")[0];
-  fechaMinimaID.min = new Date().toISOString().split("T")[0];
+/* minimos y maximos para hoy en inputs de type=date */
 
+birth.max = new Date().toISOString().split("T")[0];
+departureDate.min = new Date().toISOString().split("T")[0];
+returnDate.min = new Date().toISOString().split("T")[0];
 
+/* ////// */
 
 document.querySelector('*').addEventListener('click', function (event) {
   if (event.target.dataset.btnPrevious) {
@@ -90,14 +96,20 @@ document.querySelector('*').addEventListener('click', function (event) {
   
 })
 
-var summaryName = document.getElementById('resumenNombre');
-
-var summaryEmail = document.getElementById('resumenEmail');
-
-summaryName.textContent = document.getElementById('name').value;
 
 document.addEventListener('submit', (event) => {
   event.preventDefault();
   console.log('Has enviado el formulario!');
   alert('Has enviado el formulario!');
 });
+
+/* var summaryName = document.getElementById('resumenNombre');
+
+var summaryEmail = document.getElementById('resumenEmail');
+
+summaryName.textContent = document.getElementById('name').value;
+ */
+
+
+
+console.log(document.getElementById('province'.valueOf));

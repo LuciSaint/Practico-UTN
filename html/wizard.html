@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-item" data-form-item>
                     <label class="form-label">Fecha de Nacimiento</label>
-                    <input class="form-input" data-form-input type="date" id="fechaMaximaID" placeholder="Escribe tu fecha de nacimiento" required>
+                    <input class="form-input inputDate" data-form-input id="birth" type="date" min="1900-01-01" max="today" placeholder="Escribe tu fecha de nacimiento" required>
                 </div>
             </fieldset>
 
@@ -69,8 +69,8 @@
             <fieldset class="form-content" data-form-tab>
                 <h1>Datos de Viaje</h1> 
                     <div class="form-item" data-form-item>
-                        <label for="destino" class="form-label">Selecciona tu destino</label>
-                        <select class="form-input" data-form-input id="destino" required> 
+                        <label for="destination" class="form-label">Selecciona tu destino</label>
+                        <select class="form-input" data-form-input id="destination" required> 
                             <option value="bariloche">Bariloche</option>
                             <option value="nuevayork">Nueva York</option>
                             <option value="riodejaneiro">Rio de Janeiro</option>
@@ -78,12 +78,12 @@
                         </select>
                     </div>
                     <div class="form-item" data-form-item>
-                        <label class="form-label">Fecha de Salida</label>
-                        <input class="form-input" data-form-input type="date" id="fechaMinimaID" max="2024-01-20" placeholder="Elige tu fecha de salida" required>
+                        <label for="departureDate" class="form-label">Fecha de Salida</label>
+                        <input class="form-input" data-form-input type="date" id="departureDate" max="2024-01-20" placeholder="Elige tu fecha de salida" required>
                     </div> 
                     <div class="form-item" data-form-item>
-                        <label class="form-label">Fecha de Regreso</label>
-                        <input class="form-input" data-form-input type="date" id="fechaMinimaID" max="2024-02-20" placeholder="Elige tu fecha de regreso" required>
+                        <label for="returnDate" class="form-label">Fecha de Regreso</label>
+                        <input class="form-input" data-form-input type="date" id="returnDate" max="2024-02-20" placeholder="Elige tu fecha de regreso" required>
                     </div> 
                     <!-- Coloque esta seccion para establecer  -->
             </fieldset>
@@ -92,11 +92,11 @@
             <fieldset class="form-content" data-form-tab>
                 <h1>Datos Generales</h1>
                 <div class="form-item" data-form-item>
-                    <label for="input3A" class="form-label">Correo Electrónico</label>
+                    <label for="email" class="form-label">Correo Electrónico</label>
                     <input class="form-input" data-form-input id="email" type="email" placeholder="ejemplo@mail.com" required>
                 </div>
                 <div class="form-item" data-form-item>
-                    <label for="input3B" class="form-label">Provincia de origen</label>
+                    <label for="province" class="form-label">Provincia de origen</label>
                     <select class="form-input" data-form-input id="province" placeholder="Selecciona tu provincia" required>
                         <option value="buenosaires">Buenos Aires</option>
                         <option value="caba">Ciudad Autónoma de Buenos Aires</option>
@@ -125,7 +125,7 @@
                     </select>
                 </div>
                 <div class="form-item" data-form-item>
-                    <label for="input3C" class="form-label">Localidad</label>
+                    <label for="locality" class="form-label">Localidad</label>
                     <input class="form-input" data-form-input id="locality" type="text" placeholder="Escribe tu localidad" required> <!-- Seccion Localidad (una o dos como mucho por provincia) -->
                 </div> <!-- Es posible hacer un select mediante un array de javascript, pero creo que con esta lista grande funciona de igual forma, podria consultar -->
             </fieldset>
@@ -134,8 +134,8 @@
             <fieldset class="form-content" data-form-tab>
                 <h1>Medios de Pago</h1>
                     <div class="form-item" data-form-item>
-                        <label for="input4A" class="form-label">Selecciona tu medio de pago</label>
-                        <select class="form-input" data-form-input id="paymentmethod" type="text" placeholder="ej(mastercard, paypal, etc)" required> 
+                        <label for="payment" class="form-label">Selecciona tu medio de pago</label>
+                        <select class="form-input" data-form-input id="payment" type="text" placeholder="ej(mastercard, paypal, etc)" required> 
                             <option value="mastercard">MasterCard</option>
                             <option value="visa">Visa</option>
                             <option value="paypal">PayPal</option>
@@ -148,11 +148,22 @@
             <!-- Seccion Resumen -->
             <fieldset class="form-content" data-form-tab>
                 <h1>Resumen</h1>
-                <p>Nombre: <span id="resumenNombre"></span></p>
-                <p>Apellido:<span id="resumenNombre"></span></p>
-                <p>Fecha de Nacimiento: <span id="resumenFechaNacimiento"></span></p>
-                <p>Email:<span id="resumenEmail"></span></p>
-                <p>Destino: <span id="resumenDestino"></span></p>
+                <div class="fila">
+                    <div class="columna">
+                        <p>Nombre: <span id="resumenNombre"></span></p>
+                        <p>Apellido:<span id="resumenApellido"></span></p>
+                        <p>Fecha de Nacimiento: <span id="resumenFechaNacimiento"></span></p>
+                        <p>Destino: <span id="resumenDestino"></span></p>
+                        <p>Fecha de Salida:<span id="resumenFechaSalida"></span></p>
+                    </div>
+                    <div class="columna">
+                        <p>Fecha de Regreso:<span id="resumenFechaRegreso"></span></p>
+                        <p>Email:<span id="resumenEmail"></span></p>
+                        <p>Provincia de Origen:<span id="resumenProvincia"></span></p>
+                        <p>Localidad:<span id="resumenLocalidad"></span></p>
+                        <p>Medio de Pago:<span id="resumenMedioPago"></span></p>
+                    </div>
+                
             <!-- pendiente -->
             </fieldset>
             
