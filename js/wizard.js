@@ -87,7 +87,7 @@ document.querySelector('*').addEventListener('click', function (event) {
     nextPrev(1)
     updateWizardBarWidth()
   }
-
+  
 })
 
 var summaryName = document.getElementById('resumenNombre');
@@ -96,4 +96,8 @@ var summaryEmail = document.getElementById('resumenEmail');
 
 summaryName.textContent = document.getElementById('name').value;
 
-
+document.addEventListener('submit', (event) => {
+  event.preventDefault();
+  console.log('Has enviado el formulario!');
+  alert('Has enviado el formulario!');
+});

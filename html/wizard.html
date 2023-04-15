@@ -53,15 +53,15 @@
                 <h1>Datos Personales</h1>
                 <div class="form-item" data-form-item>
                     <label for="name" class="form-label">Nombre/s</label>
-                    <input class="form-input" data-form-input id="name" name="name" type="text" placeholder="Escribe tu/s nombre/s">
+                    <input class="form-input" data-form-input id="name" name="name" type="text" placeholder="Escribe tu/s nombre/s" required>
                 </div>
                 <div class="form-item" data-form-item>
                     <label for="lastname" class="form-label">Apellido/s</label>
-                    <input class="form-input" data-form-input id="lastname" name="lastname" type="text"  placeholder="Escribe tu/s apellido/s">
+                    <input class="form-input" data-form-input id="lastname" name="lastname" type="text"  placeholder="Escribe tu/s apellido/s" required>
                 </div>
                 <div class="form-item" data-form-item>
                     <label class="form-label">Fecha de Nacimiento</label>
-                    <input class="form-input" data-form-input type="date" id="fechaMaximaID" placeholder="Escribe tu fecha de nacimiento">
+                    <input class="form-input" data-form-input type="date" id="fechaMaximaID" placeholder="Escribe tu fecha de nacimiento" required>
                 </div>
             </fieldset>
 
@@ -70,7 +70,7 @@
                 <h1>Datos de Viaje</h1> 
                     <div class="form-item" data-form-item>
                         <label for="destino" class="form-label">Selecciona tu destino</label>
-                        <select class="form-input" data-form-input id="destino"> 
+                        <select class="form-input" data-form-input id="destino" required> 
                             <option value="bariloche">Bariloche</option>
                             <option value="nuevayork">Nueva York</option>
                             <option value="riodejaneiro">Rio de Janeiro</option>
@@ -79,11 +79,11 @@
                     </div>
                     <div class="form-item" data-form-item>
                         <label class="form-label">Fecha de Salida</label>
-                        <input class="form-input" data-form-input type="date" id="fechaMinimaID" max="2024-01-20" placeholder="Elige tu fecha de salida">
+                        <input class="form-input" data-form-input type="date" id="fechaMinimaID" max="2024-01-20" placeholder="Elige tu fecha de salida" required>
                     </div> 
                     <div class="form-item" data-form-item>
                         <label class="form-label">Fecha de Regreso</label>
-                        <input class="form-input" data-form-input type="date" id="fechaMinimaID" max="2024-02-20" placeholder="Elige tu fecha de regreso">
+                        <input class="form-input" data-form-input type="date" id="fechaMinimaID" max="2024-02-20" placeholder="Elige tu fecha de regreso" required>
                     </div> 
                     <!-- Coloque esta seccion para establecer  -->
             </fieldset>
@@ -93,11 +93,11 @@
                 <h1>Datos Generales</h1>
                 <div class="form-item" data-form-item>
                     <label for="input3A" class="form-label">Correo Electrónico</label>
-                    <input class="form-input" data-form-input id="email" type="email" placeholder="ejemplo@mail.com">
+                    <input class="form-input" data-form-input id="email" type="email" placeholder="ejemplo@mail.com" required>
                 </div>
                 <div class="form-item" data-form-item>
                     <label for="input3B" class="form-label">Provincia de origen</label>
-                    <select class="form-input" data-form-input id="province" placeholder="Selecciona tu provincia" >
+                    <select class="form-input" data-form-input id="province" placeholder="Selecciona tu provincia" required>
                         <option value="buenosaires">Buenos Aires</option>
                         <option value="caba">Ciudad Autónoma de Buenos Aires</option>
                         <option value="catamarca">Catamarca</option>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="form-item" data-form-item>
                     <label for="input3C" class="form-label">Localidad</label>
-                    <input class="form-input" data-form-input id="locality" type="text" placeholder="Escribe tu localidad"> <!-- Seccion Localidad (una o dos como mucho por provincia) -->
+                    <input class="form-input" data-form-input id="locality" type="text" placeholder="Escribe tu localidad" required> <!-- Seccion Localidad (una o dos como mucho por provincia) -->
                 </div> <!-- Es posible hacer un select mediante un array de javascript, pero creo que con esta lista grande funciona de igual forma, podria consultar -->
             </fieldset>
 
@@ -135,7 +135,7 @@
                 <h1>Medios de Pago</h1>
                     <div class="form-item" data-form-item>
                         <label for="input4A" class="form-label">Selecciona tu medio de pago</label>
-                        <select class="form-input" data-form-input id="paymentmethod" type="text" placeholder="ej(mastercard, paypal, etc)"> 
+                        <select class="form-input" data-form-input id="paymentmethod" type="text" placeholder="ej(mastercard, paypal, etc)" required> 
                             <option value="mastercard">MasterCard</option>
                             <option value="visa">Visa</option>
                             <option value="paypal">PayPal</option>
