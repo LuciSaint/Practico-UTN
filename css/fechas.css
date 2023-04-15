@@ -85,23 +85,25 @@
 
 /* MAIN */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700;800&display=swap'); */
+
 .main{
     height: 86vh;
     overflow-y: auto;
 }
 
 .destinos-container{
-    border: 2px solid red;
+    border: 5px solid rgb(0, 255, 213);
     width: 95%;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.calendar-container{
-    border: 2px solid red;
+.calendars-container{
+    border: 5px solid red;
     width: 95%;
-    height: 500px;
+    /* height: 200px; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -109,5 +111,42 @@
 }
 
 .calendar{
+    border: 5px solid rgb(149, 0, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.table{
+    width: 312px;
+}
+
+/* .table caption{
+    height: 150px;
+    background-color: lightcoral;
+    text-align: left;
+} */
+.mes{
+    text-align: left;
+    height: 75px;
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    background-color: #169DBF;
+}
+.año{
+    text-align: left;
+    height: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    background-color: #554EC8;
+}
+.table tr{
+    height: 35px;
+}
+.table td{
+    text-align: center;
 }
