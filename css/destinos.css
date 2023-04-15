@@ -115,19 +115,20 @@ margin-top: 40px;
   }
 
   #rioJaneiroOculto img{
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     border-radius: 1%;
+
     
   }
   #barilocheOculto img{
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     border-radius: 1%;
   }
   
   #NYOculto img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     border-radius: 1%;
   }
@@ -145,7 +146,13 @@ margin-top: 40px;
   }
 
   .mostrar {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  #contenedorInfo{
+    width: 800px;
+    height: 100%;
   }
 
 .contenidoCuadro h2{
@@ -176,3 +183,27 @@ figcaption {
     font-style: italic;
     font-size: 12px;
 }
+
+#mapRio {
+     
+        width: 30%;
+        height: 100px;;
+    border-radius: 20px;
+
+     }
+
+     #mapBari {
+     
+        width: 30%;
+        height: 100px;
+    border-radius: 20px;
+
+     }
+     #mapNY{
+     
+        width: 30%;
+        height: 100px;
+    border-radius: 20px;
+
+     }
+
