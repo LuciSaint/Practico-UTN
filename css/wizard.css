@@ -217,16 +217,40 @@ fieldset {
   border: none;
 }
 
-#btnEnviar {
-  display: none;
+.fieldsetResumen {
+  border: solid;
+  padding: 30px;
+  margin: 0 -20%;
 }
 
-.fila {
-  display: flex;
-}
-
-.columna {
+.listaResumen {
   flex: 50%;
   line-height: 200%;
   font-weight: bold;
 }
+
+ul.listaResumen {
+  display: block;
+  font-weight: bolder;
+  columns: 3;
+  border: dotted;
+  align-self: center;
+}
+
+ul.listaResumen li {
+  display: block;
+  padding: 10px;
+  font-size: larger;
+}
+
+ul.listaResumen li span {
+  display: block;
+  color: #5f5f9f;
+  padding: 5px;
+  font-weight: 700;
+}
+
+#btnEnviar {
+  display: none;
+}
+

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaja Hoy</title>
     <link rel="stylesheet" type="text/css" href="/css/wizard.css"/>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
 </head>
 <body>
     <header class="navegacion">
@@ -48,6 +49,29 @@
                 </ul>
             </div>
 
+            <!-- Seccion Datos de Viaje -->
+            <fieldset class="form-content" data-form-tab>
+                <h1>Datos de Viaje</h1> 
+                    <div class="form-item" data-form-item>
+                        <label for="destination" class="form-label">Selecciona tu destino</label>
+                        <select class="form-input" data-form-input id="destination" required> 
+                            <option value="Bariloche">Bariloche</option>
+                            <option value="Nueva York">Nueva York</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="" selected disabled hidden>Selecciona destino</option>
+                        </select>
+                    </div>
+                    <div class="form-item" data-form-item>
+                        <label for="departureDate" class="form-label">Fecha de Salida</label>
+                        <input class="form-input" data-form-input type="date" id="departureDate" max="2024-01-20" placeholder="Elige tu fecha de salida" required>
+                    </div> 
+                    <div class="form-item" data-form-item>
+                        <label for="returnDate" class="form-label">Fecha de Regreso</label>
+                        <input class="form-input" data-form-input type="date" id="returnDate"  max="2024-02-20" placeholder="Elige tu fecha de regreso" required>
+                    </div> 
+                    <!-- Coloque esta seccion para establecer  -->
+            </fieldset>
+
             <!-- Seccion Datos Personales -->
             <fieldset class="form-content" data-form-tab> <!-- creo que es posible reemplazar estos divs con fieldset, puede verse mejor como codigo, necesito testear mas esto! -->
                 <h1>Datos Personales</h1>
@@ -63,71 +87,53 @@
                     <label class="form-label">Fecha de Nacimiento</label>
                     <input class="form-input inputDate" data-form-input id="birth" type="date" min="1900-01-01" max="today" placeholder="Escribe tu fecha de nacimiento" required>
                 </div>
-            </fieldset>
-
-            <!-- Seccion Datos de Viaje -->
-            <fieldset class="form-content" data-form-tab>
-                <h1>Datos de Viaje</h1> 
-                    <div class="form-item" data-form-item>
-                        <label for="destination" class="form-label">Selecciona tu destino</label>
-                        <select class="form-input" data-form-input id="destination" required> 
-                            <option value="bariloche">Bariloche</option>
-                            <option value="nuevayork">Nueva York</option>
-                            <option value="riodejaneiro">Rio de Janeiro</option>
-                            <option value="" selected disabled hidden>Selecciona destino</option>
-                        </select>
-                    </div>
-                    <div class="form-item" data-form-item>
-                        <label for="departureDate" class="form-label">Fecha de Salida</label>
-                        <input class="form-input" data-form-input type="date" id="departureDate" max="2024-01-20" placeholder="Elige tu fecha de salida" required>
-                    </div> 
-                    <div class="form-item" data-form-item>
-                        <label for="returnDate" class="form-label">Fecha de Regreso</label>
-                        <input class="form-input" data-form-input type="date" id="returnDate" max="2024-02-20" placeholder="Elige tu fecha de regreso" required>
-                    </div> 
-                    <!-- Coloque esta seccion para establecer  -->
-            </fieldset>
-
-            <!-- Seccion Datos Generales -->
-            <fieldset class="form-content" data-form-tab>
-                <h1>Datos Generales</h1>
-                <div class="form-item" data-form-item>
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input class="form-input" data-form-input id="email" type="email" placeholder="ejemplo@mail.com" required>
-                </div>
                 <div class="form-item" data-form-item>
                     <label for="province" class="form-label">Provincia de origen</label>
                     <select class="form-input" data-form-input id="province" placeholder="Selecciona tu provincia" required>
-                        <option value="buenosaires">Buenos Aires</option>
-                        <option value="caba">Ciudad Autónoma de Buenos Aires</option>
-                        <option value="catamarca">Catamarca</option>
-                        <option value="chaco">Chaco</option>
-                        <option value="chubut">Chubut</option>
-                        <option value="cordoba">Córdoba</option>
-                        <option value="corrientes">Corrientes</option>
-                        <option value="entrerios">Entre Ríos</option> 
-                        <option value="formosa">Formosa</option>
-                        <option value="jujuy">Jujuy</option>
-                        <option value="lapampa">La Pampa</option>
-                        <option value="mendoza">Mendoza</option>
-                        <option value="misiones">Misiones</option>
-                        <option value="neuquen">Neuquén</option>
-                        <option value="rionegro">Río Negro</option>
-                        <option value="salta">Salta</option>
-                        <option value="sanjuan">San Juan</option>
-                        <option value="sanluis">San Luis</option>
-                        <option value="santacruz">Santa Cruz</option>
-                        <option value="santafe">Santa Fe</option>
-                        <option value="santiagodelestero">Santiago del Estero</option>
-                        <option value="tierradelfuego">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
-                        <option value="tucuman">Tucumán</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Ciudad Autonoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Cordoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Rios">Entre Ríos</option> 
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Rio Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucuman">Tucumán</option>
                         <option value="" selected disabled hidden>Selecciona tu provincia</option>
                     </select>
                 </div>
                 <div class="form-item" data-form-item>
                     <label for="locality" class="form-label">Localidad</label>
                     <input class="form-input" data-form-input id="locality" type="text" placeholder="Escribe tu localidad" required> <!-- Seccion Localidad (una o dos como mucho por provincia) -->
-                </div> <!-- Es posible hacer un select mediante un array de javascript, pero creo que con esta lista grande funciona de igual forma, podria consultar -->
+                </div> 
+            </fieldset>
+
+            <!-- Seccion Datos de Contacto -->
+            <fieldset class="form-content" data-form-tab>
+                <h1>Datos de Contacto</h1>
+                <div class="form-item" data-form-item>
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input class="form-input" data-form-input id="email" type="email" placeholder="ejemplo@mail.com" required>
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input class="form-input" data-form-input id="phone" type="tel" inputmode="numeric" pattern="[0-9]+" placeholder="Código de Area + Numero (este campo solo admite números)" required>
+                </div>
+               <!-- Es posible hacer un select mediante un array de javascript, pero creo que con esta lista grande funciona de igual forma, podria consultar -->
             </fieldset>
 
             <!-- Seccion Medios de Pago -->
@@ -136,36 +142,39 @@
                     <div class="form-item" data-form-item>
                         <label for="payment" class="form-label">Selecciona tu medio de pago</label>
                         <select class="form-input" data-form-input id="payment" type="text" placeholder="ej(mastercard, paypal, etc)" required> 
-                            <option value="mastercard">MasterCard</option>
-                            <option value="visa">Visa</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="mercadopago">Mercado Pago</option>
+                            <option value="MasterCard">MasterCard</option>
+                            <option value="Visa">Visa</option>
+                            <option value="PayPal">PayPal</option>
+                            <option value="Mercado Pago">Mercado Pago</option>
                             <option value="" selected disabled hidden>Selecciona medio de pago</option>
                         </select>
                     </div>
             </fieldset>
 
             <!-- Seccion Resumen -->
-            <fieldset class="form-content" data-form-tab>
-                <h1>Resumen</h1>
-                <div class="fila">
-                    <div class="columna">
-                        <p>Nombre: <span id="resumenNombre"></span></p>
-                        <p>Apellido:<span id="resumenApellido"></span></p>
-                        <p>Fecha de Nacimiento: <span id="resumenFechaNacimiento"></span></p>
-                        <p>Destino: <span id="resumenDestino"></span></p>
-                        <p>Fecha de Salida:<span id="resumenFechaSalida"></span></p>
-                    </div>
-                    <div class="columna">
-                        <p>Fecha de Regreso:<span id="resumenFechaRegreso"></span></p>
-                        <p>Email:<span id="resumenEmail"></span></p>
-                        <p>Provincia de Origen:<span id="resumenProvincia"></span></p>
-                        <p>Localidad:<span id="resumenLocalidad"></span></p>
-                        <p>Medio de Pago:<span id="resumenMedioPago"></span></p>
-                    </div>
+
+                <fieldset class="form-content fieldsetResumen" id="fieldsetResumen" data-form-tab>
+                    <h1>Resumen</h1>
+                        <ul class="listaResumen">
+                            <li>Destino: <span id="resumenDestino"></span></li>
+                            <li>Fecha de Salida:<span id="resumenFechaSalida"></span></li>
+                            <li>Fecha de Regreso:<span id="resumenFechaRegreso"></span></li>
+                        </ul>
+                        <ul class="listaResumen">
+                            <li>Nombre: <span id="resumenNombre"></span></li>
+                            <li>Apellido:<span id="resumenApellido"></span></li>
+                            <li>Fecha de Nacimiento: <span id="resumenNacimiento"></span></li>
+                            <li>Provincia de Origen:<span id="resumenProvincia"></span></li>
+                            <li>Localidad:<span id="resumenLocalidad"></span></li>
+                        </ul>
+                        <ul class="listaResumen">
+                            <li>Email:<span id="resumenEmail"></span></li>
+                            <li>Teléfono:<span id="resumenTelefono"></span></li>
+                            <li>Medio de Pago:<span id="resumenMedioPago"></span></li>
+                        </ul>
+                        <button class="btn primary" type="button" id="btnPDF">Guardar como PDF</button>
+                </fieldset>
                 
-            <!-- pendiente -->
-            </fieldset>
             
             <div class="form-buttons">
                 <button class="btn bordered" type="button" data-btn-previous="true">Volver</button>
