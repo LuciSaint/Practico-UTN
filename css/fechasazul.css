@@ -27,6 +27,7 @@
     justify-content: space-between;
     padding: 10px 170px 9px 120px;
     background-color: #121212;
+    /* height: 70px; */
     height: 8vh;
 }
 
@@ -206,4 +207,7 @@
     font-weight: 700;
     font-size: 1.2rem;
     border-bottom: 1px solid #12121249;
+}
+.azul{
+    background-color: #3d7db886;
 }

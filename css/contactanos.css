@@ -93,28 +93,53 @@
     width: 30%;
     margin-left: 20px;
     margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-self: center;
     background-color: beige;
     border: solid #121212; 
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 2;
+    align-items: center;
+    
+    
 }
 
+#icono1{
+    grid-column: 2;
+    grid-row: 1;
 
+}
+#icono2{
+    grid-column: 2; 
+    grid-row: 2;
+}
+#icono3{
+    grid-column: 2;
+    grid-row: 3;
+
+}
+#icono4{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+#icono5{
+    grid-column: 1;
+    grid-row: 2;
+}
+#icono6{
+    grid-column: 1;
+    grid-row: 3;
+}
 
 .imgIcono{
     height: 30px;
     background-color: beige;
     margin: 5px;
-    
-    
 }
 .main{
     height: 86vh;
     overflow-y: auto;
     background-image: url(/img/Background-Contactanos-BuenosAires.jpg);
-    
 
 }
 
@@ -126,6 +151,5 @@
     margin-right: 20px;
     background-color: beige;
     border: solid #121212; 
-    
-    
 }
+
