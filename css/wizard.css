@@ -96,6 +96,12 @@ main {
     padding: 0;
   }
   
+.tituloForm{
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -159,6 +165,10 @@ main {
 }
 .btn.primary {
   background-color: #1e4dba;
+  color: #fff;
+}
+.btn.savePDF{
+  background-color: #668a2c;
   color: #fff;
 }
 .btn[disabled] {
@@ -253,4 +263,3 @@ ul.listaResumen li span {
 #btnEnviar {
   display: none;
 }
-
