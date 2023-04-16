@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaja Hoy</title>
     <link rel="stylesheet" type="text/css" href="/css/wizard.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="/js/wizard.js"></script>
 </head>
 <body>
     <header class="navegacion">
@@ -37,6 +38,7 @@
 
     <!-- MAIN INICIO -->
     <main class="main">
+        <h1 class="tituloForm">Formulario de Reserva</h1>
         <form class="form">
             <div class="wizard">
                 <div class="wizard-bar" style="width: 0;" data-wizard-bar></div>
@@ -51,7 +53,7 @@
 
             <!-- Seccion Datos de Viaje -->
             <fieldset class="form-content" data-form-tab>
-                <h1>Datos de Viaje</h1> 
+                <h2>Datos de Viaje</h2> 
                     <div class="form-item" data-form-item>
                         <label for="destination" class="form-label">Selecciona tu destino</label>
                         <select class="form-input" data-form-input id="destination" required> 
@@ -74,7 +76,7 @@
 
             <!-- Seccion Datos Personales -->
             <fieldset class="form-content" data-form-tab> <!-- creo que es posible reemplazar estos divs con fieldset, puede verse mejor como codigo, necesito testear mas esto! -->
-                <h1>Datos Personales</h1>
+                <h2>Datos Personales</h2>
                 <div class="form-item" data-form-item>
                     <label for="name" class="form-label">Nombre/s</label>
                     <input class="form-input" data-form-input id="name" name="name" type="text" placeholder="Escribe tu/s nombre/s" required>
@@ -124,7 +126,7 @@
 
             <!-- Seccion Datos de Contacto -->
             <fieldset class="form-content" data-form-tab>
-                <h1>Datos de Contacto</h1>
+                <h2>Datos de Contacto</h2>
                 <div class="form-item" data-form-item>
                     <label for="email" class="form-label">Correo Electrónico</label>
                     <input class="form-input" data-form-input id="email" type="email" placeholder="ejemplo@mail.com" required>
@@ -138,7 +140,7 @@
 
             <!-- Seccion Medios de Pago -->
             <fieldset class="form-content" data-form-tab>
-                <h1>Medios de Pago</h1>
+                <h2>Medios de Pago</h2>
                     <div class="form-item" data-form-item>
                         <label for="payment" class="form-label">Selecciona tu medio de pago</label>
                         <select class="form-input" data-form-input id="payment" type="text" placeholder="ej(mastercard, paypal, etc)" required> 
@@ -152,9 +154,9 @@
             </fieldset>
 
             <!-- Seccion Resumen -->
-
-                <fieldset class="form-content fieldsetResumen" id="fieldsetResumen" data-form-tab>
-                    <h1>Resumen</h1>
+            <div id="printResumen"> 
+                <fieldset class="form-content fieldsetResumen" data-form-tab>
+                    <h2>Resumen</h2>
                         <ul class="listaResumen">
                             <li>Destino: <span id="resumenDestino"></span></li>
                             <li>Fecha de Salida:<span id="resumenFechaSalida"></span></li>
@@ -172,17 +174,19 @@
                             <li>Teléfono:<span id="resumenTelefono"></span></li>
                             <li>Medio de Pago:<span id="resumenMedioPago"></span></li>
                         </ul>
-                        <button class="btn primary" type="button" id="btnPDF">Guardar como PDF</button>
+                    
                 </fieldset>
+            </div>
                 
             
             <div class="form-buttons">
                 <button class="btn bordered" type="button" data-btn-previous="true">Volver</button>
                 <button class="btn primary" type="button" data-btn-next="true">Siguiente</button>
                 <button class="btn primary" type="submit" id="btnSubmit">Enviar</button>
+                <button class="btn savePDF" type="button" id="btnPDF">Guardar como PDF</button>
             </div>
         </form>
-        <script src="/js/wizard.js"></script>
+
     </main>
     <!-- MAIN FINAL -->
 
