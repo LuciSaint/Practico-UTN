@@ -85,39 +85,47 @@
 
 /* MAIN */
 
-.main{
-    height: 86vh;
-    overflow-y: auto;
-}
+
+
 .contenedorIconos{
-    height: 50px;
-    margin: 17px;
-    padding: 12px;
+    float: left;
+    margin-top: 10%;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-self: center;
+    background-color: beige;
+    border: solid #121212; 
 }
 
 
 
 .imgIcono{
-    height: 100px;
-    width: auto;
-    position: relative;
-    
-    
-}
-
-
-.telefono{
-    display: flex;
-    flex-direction: row;
-    font-size: 9px;
-    align-self: flex-end;
-    justify-content: space-between; /* a corregir*/
-}
-
-.telefono img{
     height: 30px;
+    background-color: beige;
+    margin: 5px;
+    
+    
+}
+.main{
+    height: 86vh;
+    overflow-y: auto;
+    background-image: url(/img/Background-Contactanos-BuenosAires.jpg);
+    
+
+}
+
+.aside {
+    float: right;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    border: solid #121212; 
+    
+    
 }
