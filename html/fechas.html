@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/fechas.css">
+
+    <!-- fonts calendario-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700;800&display=swap" rel="stylesheet">
+    <!-- fonts calendario-->
+
     <title>Viaja Hoy</title>
 </head>
 
@@ -35,33 +42,239 @@
     </header>
 
 
+
     <!-- MAIN INICIO -->
     <main class="main">
         <div class="destinos-container">
-            <div class="BRC">Bariloche</div>
-            <div class="RIO">Rio de Janeiro</div>
-            <div class="NY">Nueva York</div>
+            <div class="destinos destinos-BRC">Bariloche</div>
+            <div class="destinos destinos-RIO">Rio de Janeiro</div>
+            <div class="destinos destinos-NY">Nueva York</div>
         </div>
-        <div class="calendar-container">
-            <div class="calendar mayo"></div>
-            <div class="calendar junio"></div>
-            <div class="calendar julio"></div>
-            <div class="calendar agosto"></div>
+        <div class="calendars-container calendars-container1">
+            <div class="calendar calendar-mayo">
+                <table class="table table-mayo">
+                    <caption> <div class="mes">MAYO</div> <div class="año">2023</div> </caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr1"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-junio">
+                <table class="table table-junio">
+                    <caption>JUNIO 2023</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-julio">
+                <table class="table table-julio">
+                    <caption>JULIO 2023</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-agosto">
+                <table class="table table-agosto">
+                    <caption>AGOSTO 2023</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="calendar-container">
-            <div class="calendar septiembre"></div>
-            <div class="calendar octubre"></div>
-            <div class="calendar noviembre"></div>
-            <div class="calendar diciembre"></div>
+        <div class="calendars-container calendars-container2">
+            <div class="calendar calendar-septimbre">
+                <table class="table table-septimbre">
+                    <caption>SEPTIEMBRE 2023</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-octubre">
+                <table class="table table-octubre">
+                    <caption>OCTUBRE 2023</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-noviembre">
+                <table class="table table-noviembre">
+                    <caption>NOVIEMBRE 2023</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-diciembre">
+                <table class="table table-diciembre">
+                    <caption>DICIEMBRE 2023</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="calendar-container">
-            <div class="calendar enero"></div>
-            <div class="calendar febrero"></div>
-            <div class="calendar marzo"></div>
-            <div class="calendar abril"></div>
+        <div class="calendars-container calendars-container2">
+            <div class="calendar calendar-enero">
+                <table class="table table-enero">
+                    <caption>ENERO 2024</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-febrero">
+                <table class="table table-febrero">
+                    <caption>FEBRERO 2024</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-marzo">
+                <table class="table table-marzo">
+                    <caption>MARZO 2024</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar calendar-abril">
+                <table class="table table-abril">
+                    <caption>ABRIL 2024</caption>
+                    <colgroup>
+                        <col><col><col><col><col><col><col>
+                    </colgroup>
+                    <thead>
+                        <tr><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                        <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                        <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
     <!-- MAIN FINAL -->
+
 
 
     <footer id="contactanos" class="footer">
