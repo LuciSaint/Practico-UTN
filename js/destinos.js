@@ -22,7 +22,7 @@ for (let i = 0; i < cuadros.length; i++) {
   mostrarInformacion(cuadro, informacionOculta);
 }
 
-var map2 = L.map('mapRio').setView([-22.90642, -43.18223], 11);
+/* var map2 = L.map('mapRio').setView([-22.90642, -43.18223], 11);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -45,3 +45,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   }).addTo(map3);
 
   var marker = L.marker([40.71427, -74.00597]).addTo(map3);
+ */

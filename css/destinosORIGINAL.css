@@ -1,0 +1,209 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed;
+}
+
+/* HEADER */
+.bannerSuperior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+    background: linear-gradient(#169DBF, #554EC8);
+    height: 2vh;
+    color: #D4D4D4;
+}
+
+.textoSuperior{
+    font-size: 12px;
+}
+
+.bannerInferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 170px 9px 120px;
+    background-color: #121212;
+    /* height: 70px; */
+    height: 8vh;
+}
+
+.headerLogo{
+    width: 350px;
+    height: 38px;
+}
+
+.listaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 750px;
+    height: 38px;
+}
+
+.itemHeader{
+    list-style: none;
+}
+
+.itemHeader a{
+    color: #D4D4D4;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #121212;
+    color: #D4D4D4;
+    text-align: center;
+    height: 4vh;
+}
+
+.listaFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px 0px;
+    font-size: 1rem;
+    list-style: none;
+    height: 4vh;
+}
+
+.listaFooter a{
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* MAIN */
+
+.main{
+    height: 86vh;
+    overflow-y: auto;
+}
+
+.contenedorCuadros {
+display: flex;
+
+justify-content: space-evenly ;
+margin-top: 40px;
+
+}
+
+.cuadro {
+    width: 400px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px #cfcfcf solid;
+    box-shadow: 15px 15px 15px 5px  #ababab;
+  
+    
+    
+
+  }
+
+  #rioJaneiroOculto img{
+    max-width: 70%;
+    height: auto;
+    border-radius: 1%;
+
+    
+  }
+  #barilocheOculto img{
+    max-width: 70%;
+    height: auto;
+    border-radius: 1%;
+  }
+  
+  #NYOculto img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 1%;
+  }
+  
+  .imgCuadros{
+    margin-top: 20px;
+    width: 360px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .oculto {
+    display: none;
+  }
+
+  .mostrar {
+    display: flex;
+    justify-content: space-around;
+
+  }
+  #contenedorInfo{
+    width: 800px;
+    height: 100%;
+  }
+
+.contenidoCuadro h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    border-radius: 6px;
+    background-color: rgb(199, 199, 199) ;
+    max-width: 70%;
+    margin-left: 60px;
+
+}
+
+.contenidoOculto{
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+   
+
+   
+}
+
+
+
+figcaption {
+    font-style: italic;
+    font-size: 12px;
+}
+
+#mapRio {
+     
+        width: 30%;
+        height: 100px;;
+    border-radius: 20px;
+
+     }
+
+     #mapBari {
+     
+        width: 30%;
+        height: 100px;
+    border-radius: 20px;
+
+     }
+     #mapNY{
+     
+        width: 30%;
+        height: 100px;
+    border-radius: 20px;
+
+     }
+
