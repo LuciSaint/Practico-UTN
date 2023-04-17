@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Hoy</title>
+    <link rel="stylesheet" type="text/css" href="/css/wizard.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="/js/wizard.js"></script>
+</head>
+<body>
+    <header class="navegacion">
+        <div class="bannerSuperior">
+            <p class="textoSuperior">Exclusivo para Argentina</p>
+            <p class="textoSuperior">tres experiencias únicas...</p>
+        </div>
+        <div class="bannerInferior">
+            <nav class="navIzquierda">
+                <a href="home.html">
+                    <img class="headerLogo" id="headerLogo" src="/img/viajaHoy.png">
+                </a>
+            </nav>
+            <nav class="navDerecha">
+                <ul class="listaHeader">
+                    <li class="itemHeader itemDestinos"><a href="destinos.html">DESTINOS</a></li>
+                    <li class="itemHeader itemFechas"><a href="fechas.html">FECHAS</a></li>
+                    <li class="itemHeader itemReserva"><a href="wizard.html">RESERVA</a></li>
+                    <li class="itemHeader itemNosotros"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="itemHeader itemContactanos"><a href="contactanos.html">CONTACTANOS</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN INICIO -->
+    
+    <main class="main">
+        <div class="background"></div>
+        <form class="form">
+            <div class="wizard">
+                <div class="wizard-bar" style="width: 0;" data-wizard-bar></div>
+                <ul class="wizard-list">
+                    <li class="wizard-item" data-wizard-item>1</li>
+                    <li class="wizard-item" data-wizard-item>2</li>
+                    <li class="wizard-item" data-wizard-item>3</li>
+                    <li class="wizard-item" data-wizard-item>4</li>
+                    <li class="wizard-item" data-wizard-item>Fin!</li>
+                </ul>
+            </div>
+
+            <!-- Seccion Datos de Viaje -->
+            <fieldset class="form-content" data-form-tab>
+                <h2>Datos de Viaje</h2> 
+                    <div class="form-item" data-form-item>
+                        <label for="destination" class="form-label">Selecciona tu destino</label>
+                        <select class="form-input" data-form-input id="destination" required> 
+                            <option value="Bariloche">Bariloche</option>
+                            <option value="Nueva York">Nueva York</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="" selected disabled hidden>Selecciona destino</option>
+                        </select>
+                    </div>
+                    <div class="form-item" data-form-item>
+                        <label for="departureDate" class="form-label">Fecha de Salida</label>
+                        <input class="form-input" data-form-input type="date" id="departureDate" max="2024-01-20" placeholder="Elige tu fecha de salida" required>
+                    </div> 
+                    <div class="form-item" data-form-item>
+                        <label for="returnDate" class="form-label">Fecha de Regreso</label>
+                        <input class="form-input" data-form-input type="date" id="returnDate"  max="2024-02-20" placeholder="Elige tu fecha de regreso" required>
+                    </div> 
+                    <!-- Coloque esta seccion para establecer  -->
+            </fieldset>
+
+            <!-- Seccion Datos Personales -->
+            <fieldset class="form-content" data-form-tab> <!-- creo que es posible reemplazar estos divs con fieldset, puede verse mejor como codigo, necesito testear mas esto! -->
+                <h2>Datos Personales</h2>
+                <div class="form-item" data-form-item>
+                    <label for="name" class="form-label">Nombre/s</label>
+                    <input class="form-input" data-form-input id="name" name="name" type="text" placeholder="Escribe tu/s nombre/s" required>
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="lastname" class="form-label">Apellido/s</label>
+                    <input class="form-input" data-form-input id="lastname" name="lastname" type="text"  placeholder="Escribe tu/s apellido/s" required>
+                </div>
+                <div class="form-item" data-form-item>
+                    <label class="form-label">Fecha de Nacimiento</label>
+                    <input class="form-input inputDate" data-form-input id="birth" type="date" min="1900-01-01" max="today" placeholder="Escribe tu fecha de nacimiento" required>
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="province" class="form-label">Provincia de origen</label>
+                    <select class="form-input" data-form-input id="province" placeholder="Selecciona tu provincia" required>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Ciudad Autonoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Cordoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Rios">Entre Ríos</option> 
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Rio Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucuman">Tucumán</option>
+                        <option value="" selected disabled hidden>Selecciona tu provincia</option>
+                    </select>
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="locality" class="form-label">Localidad</label>
+                    <input class="form-input" data-form-input id="locality" type="text" placeholder="Escribe tu localidad" required> <!-- Seccion Localidad (una o dos como mucho por provincia) -->
+                </div> 
+            </fieldset>
+
+            <!-- Seccion Datos de Contacto -->
+            <fieldset class="form-content" data-form-tab>
+                <h2>Datos de Contacto</h2>
+                <div class="form-item" data-form-item>
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input class="form-input" data-form-input id="email" type="email" placeholder="ejemplo@mail.com" required>
+                </div>
+                <div class="form-item" data-form-item>
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input class="form-input" data-form-input id="phone" type="tel" inputmode="numeric" pattern="[0-9]+" placeholder="Código de Area + Numero (este campo solo admite números)" required>
+                </div>
+               <!-- Es posible hacer un select mediante un array de javascript, pero creo que con esta lista grande funciona de igual forma, podria consultar -->
+            </fieldset>
+
+            <!-- Seccion Medios de Pago -->
+            <fieldset class="form-content" data-form-tab>
+                <h2>Medios de Pago</h2>
+                    <div class="form-item" data-form-item>
+                        <label for="payment" class="form-label">Selecciona tu medio de pago</label>
+                        <select class="form-input" data-form-input id="payment" type="text" placeholder="ej(mastercard, paypal, etc)" required> 
+                            <option value="MasterCard">MasterCard</option>
+                            <option value="Visa">Visa</option>
+                            <option value="PayPal">PayPal</option>
+                            <option value="Mercado Pago">Mercado Pago</option>
+                            <option value="" selected disabled hidden>Selecciona medio de pago</option>
+                        </select>
+                    </div>
+            </fieldset>
+
+            <!-- Seccion Resumen -->
+            <div id="printResumen"> 
+                <fieldset class="form-content fieldsetResumen" data-form-tab>
+                    <h2 class="tituloResumen">Resumen</h2>
+                        <ul class="listaResumen">
+                            <li>Destino: <span id="resumenDestino"></span></li>
+                            <li>Fecha de Salida:<span id="resumenFechaSalida"></span></li>
+                            <li>Fecha de Regreso:<span id="resumenFechaRegreso"></span></li>
+                        </ul>
+                        <ul class="listaResumen">
+                            <li>Nombre: <span id="resumenNombre"></span></li>
+                            <li>Apellido:<span id="resumenApellido"></span></li>
+                            <li>Fecha de Nacimiento: <span id="resumenNacimiento"></span></li>
+                            <li>Provincia de Origen:<span id="resumenProvincia"></span></li>
+                            <li>Localidad:<span id="resumenLocalidad"></span></li>
+                        </ul>
+                        <ul class="listaResumen">
+                            <li>Email:<span id="resumenEmail"></span></li>
+                            <li>Teléfono:<span id="resumenTelefono"></span></li>
+                            <li>Medio de Pago:<span id="resumenMedioPago"></span></li>
+                        </ul>
+                    
+                </fieldset>
+            </div>
+                
+            
+            <div class="form-buttons">
+                <button class="btn bordered" type="button" data-btn-previous="true">Volver</button>
+                <button class="btn primary" type="button" data-btn-next="true">Siguiente</button>
+                <button class="btn primary" type="submit" id="btnSubmit">Enviar</button>
+                <button class="btn savePDF" type="button" id="btnPDF">Guardar como PDF</button>
+            </div>
+        </form>
+
+    </main>
+    <!-- MAIN FINAL -->
+
+
+    <footer id="contactanos" class="footer">
+        <nav class="navFooter">
+            <ul class="listaFooter">
+                <li class="itemsFooter"><a href="https://www.facebook.com/">Facebook</a></li>
+                <li class="itemsFooter"><a href="https://twitter.com/">Twitter</a></li>
+                <li class="itemsFooter"><a href="https://www.instagram.com/">Instagram</a></li>
+                <li class="itemsFooter"><a href="#gmail">Correo</a></li>
+                <li class="itemsFooter"><a href="#copyright">© 2023</a></li>
+            </ul>
+        </nav>
+    </footer>   
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed;
+}
+
+/* HEADER */
+.bannerSuperior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+    background: linear-gradient(#169DBF, #554EC8);
+    height: 2vh;
+    color: #D4D4D4;
+}
+
+.textoSuperior{
+    font-size: 12px;
+}
+
+.bannerInferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 170px 9px 120px;
+    background-color: #121212;
+    /* height: 70px; */
+    height: 8vh;
+}
+
+.headerLogo{
+    width: 350px;
+    height: 38px;
+}
+
+.listaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 750px;
+    height: 38px;
+}
+
+.itemHeader{
+    list-style: none;
+}
+
+.itemHeader a{
+  display: block;
+  font-size: 1rem;
+  color: #D4D4D4;
+  font-style: italic;
+  transition: all 300ms;
+}
+.itemHeader a:hover{
+  color: #169DBF;
+  transform: scale(1.2, 1.2);
+}
+.itemReserva a{
+  color: #169DBF;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #121212;
+    color: #D4D4D4;
+    text-align: center;
+    height: 4vh;
+}
+
+.listaFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px 0px;
+    font-size: 1rem;
+    list-style: none;
+    height: 4vh;
+}
+
+.listaFooter a{
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* MAIN */
+
+.main {
+    height: 86vh;
+    overflow-y: auto;
+}
+
+/* Wizard */
+main {
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    height: 100%;
+    background-image: url(/img/bariloche-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0px auto;
+  padding: 40px 50px;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+.form-item.has-error .form-label {
+  color: red;
+}
+.form-item.has-error .form-input {
+  border-color: red;
+  background-color: #ffe1e1;
+}
+.form-label {
+  font-size: 16px;
+  color: #161616;
+  margin-bottom: 6px;
+}
+.form-input {
+  border: 2px solid #8d8d8d;
+  border-radius: 4px;
+  background: #f9f9f9;
+  height: 30px;
+  padding: 0 16px;
+  outline: none; 
+
+}
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form-content {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-content.active {
+  display: flex;
+}
+
+.btn {
+  border-radius: 4px;
+  border: 2px solid transparent;
+  padding: 10px 24px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.btn.bordered {
+  border-color: #1e4dba;
+  color: #1e4dba;
+}
+.btn.primary {
+  background-color: #1e4dba;
+  color: #fff;
+}
+.btn.savePDF{
+  background-color: #668a2c;
+  color: #fff;
+}
+.btn[disabled] {
+  cursor: not-allowed;
+}
+
+.wizard {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.wizard:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.wizard-bar {
+  position: absolute;
+  background-color: #1e4dba;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+.wizard-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.wizard-item {
+  z-index: 2;
+  transition: 0.4s ease;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #1E4DBA;
+  color: #1E4DBA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  background-color: #f4f4f4;
+}
+
+fieldset {
+  border: none;
+}
+
+.tituloResumen {
+  display: inline-block;
+  text-align: center;
+}
+
+.fieldsetResumen {
+  margin: 20px 0px;
+  border: solid;
+  padding: 0;
+  width: 0;
+}
+
+.listaResumen {
+  flex: 50%;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+ul.listaResumen {
+  display: block;
+  font-weight: bolder;
+  columns: 3;
+  border-top: solid;
+  align-self: auto;
+  gap: 1px;
+}
+
+ul.listaResumen li {
+  display: block;
+  padding: 10px;
+}
+
+ul.listaResumen li span {
+  display: block;
+  color: #5f5f9f;
+  padding: 5px 0;
+}
+
+#btnEnviar {
+  display: none;
+}

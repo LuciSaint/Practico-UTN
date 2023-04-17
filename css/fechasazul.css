@@ -1,0 +1,222 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed;
+}
+
+/* HEADER */
+.bannerSuperior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+    background: linear-gradient(#169DBF, #554EC8);
+    height: 2vh;
+    color: #D4D4D4;
+}
+
+.textoSuperior{
+    font-size: 12px;
+}
+
+.bannerInferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 170px 9px 120px;
+    background-color: #121212;
+    /* height: 70px; */
+    height: 8vh;
+}
+
+.headerLogo{
+    width: 350px;
+    height: 38px;
+}
+
+.listaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 750px;
+    height: 38px;
+}
+
+.itemHeader{
+    list-style: none;
+}
+
+.itemHeader a{
+    display: block;
+    font-size: 1rem;
+    color: #D4D4D4;
+    font-style: italic;
+    transition: all 300ms;
+}
+.itemHeader a:hover{
+    color: #169DBF;
+    transform: scale(1.2, 1.2);
+}
+.itemFechas a{
+    color: #169DBF;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #121212;
+    color: #D4D4D4;
+    text-align: center;
+    height: 4vh;
+}
+
+.listaFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px 0px;
+    font-size: 1rem;
+    list-style: none;
+    height: 4vh;
+}
+
+.listaFooter a{
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* MAIN */
+
+.main{
+    height: 86vh;
+    overflow-y: auto;
+}
+
+
+/* DESTINOS */
+.destinos-container{
+    background-color: #d9d9d9;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 450px 40px;
+    position: sticky;
+    top: 0px;
+}
+.destinos{
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.destinos a{
+    text-decoration: none;
+    color: #121212;
+}
+.destinos-BRC{
+    background-color: #169DBF;
+    border: 2px solid #107690;
+    box-shadow: inset 0px 0px 10px #107690;
+    transition: all 300ms;
+}
+.destinos-BRC:hover{
+    box-shadow: inset 0px 0px 0px #107690, 0px 0px 3px #757575;
+}
+.destinos-RIO{
+    background-color: #3d7db8;
+    border: 2px solid #2c5b88;
+    box-shadow: inset 0px 0px 10px #2c5b88;
+    transition: all 500ms;
+}
+.destinos-RIO:hover{
+    box-shadow: inset 0px 0px 0px #2c5b88, 0px 0px 3px #757575;
+}
+.destinos-NY{
+    background-color: #554EC8;
+    border: 2px solid #363286;
+    box-shadow: inset 0px 0px 10px #363286;
+    transition: all 500ms;
+}
+.destinos-NY:hover{
+    box-shadow: inset 0px 0px 0px #363286, 0px 0px 3px #757575;
+}
+
+
+/* CALENDARIOS */
+.calendars-container{
+    background-color: #d9d9d9;
+    width: 100%;
+    padding: 0px 70px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.calendar{
+    background-color: #fafafa;
+    width: 320px;
+    padding: 2px 25px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table{
+    width: 312px;
+    border-collapse: collapse;
+}
+
+.mesCon5Filas{
+    height: 150px;
+    padding-top: 20px;
+    
+}
+.mesCon6Filas{
+    height: 140px;
+    padding-top: 20px;
+}
+.mes{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    border-left: 2px solid #121212;
+    padding: 4px 0px 0px 4px;
+}
+.año{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    height: 45px;
+    line-height: 35px;
+    border-left: 2px solid #121212;
+    padding: 0px 0px 6px 5px;
+}
+.table tr{
+    height: 45px;
+}
+.table6filas tr{
+    height: 40px;
+}
+.table th{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.6rem;
+}
+.table td{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #12121249;
+}
+.azul{
+    background-color: #3d7db886;
+}

@@ -1,0 +1,202 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed;
+}
+
+/* HEADER */
+.bannerSuperior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+    background: linear-gradient(#169DBF, #554EC8);
+    height: 2vh;
+    color: #D4D4D4;
+}
+
+.textoSuperior{
+    font-size: 12px;
+}
+
+.bannerInferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 170px 9px 120px;
+    background-color: #121212;
+    /* height: 70px; */
+    height: 8vh;
+}
+
+.headerLogo{
+    width: 350px;
+    height: 38px;
+}
+
+.listaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 750px;
+    height: 38px;
+}
+
+.itemHeader{
+    list-style: none;
+}
+
+.itemHeader a{
+    display: block;
+    font-size: 1rem;
+    color: #D4D4D4;
+    font-style: italic;
+    transition: all 300ms;
+}
+.itemHeader a:hover{
+    color: #169DBF;
+    transform: scale(1.2, 1.2);
+}
+.itemDestinos a{
+    color: #169DBF;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #121212;
+    color: #D4D4D4;
+    text-align: center;
+    height: 4vh;
+}
+
+.listaFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px 0px;
+    font-size: 1rem;
+    list-style: none;
+    height: 4vh;
+}
+
+.listaFooter a{
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* MAIN */
+
+.main{
+    height: 86vh;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+}
+
+.contenedorCuadros {
+    width: 1400px;
+    padding-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cuadro {
+    width: 350px;
+    height: 400px;
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ececec;
+    border-radius: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.cuadro1{
+    border-top: 7px solid #169DBF;
+}
+.cuadro2{
+    border-top: 7px solid #3d7db8;
+}
+.cuadro3{
+    border-top: 7px solid #554EC8 ;
+}
+.contenidoCuadro{
+    width: 80%;
+    height: 80%;
+}
+.imgCuadros{
+    width: 100%;
+    height: 75%;
+}
+.h2{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 6px;
+    margin-top: 12%;
+    background-color: rgb(199, 199, 199) ;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.oculto {
+    display: none;
+}
+.mostrar {
+    display: block;
+}
+.contenedorInfo{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: justify;
+}
+.title{
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.description{
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300;
+}
+.oferta{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 400;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+.title-gallery{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 400;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+.gallery img{
+    font-family: 'Quicksand', sans-serif;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
+}
+.gallery{
+    margin-bottom: 0.5em;
+    columns: 3 320px;
+    column-gap: 0.5em;
+}
