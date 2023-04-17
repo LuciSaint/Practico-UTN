@@ -49,9 +49,18 @@
 }
 
 .itemHeader a{
+    display: block;
+    font-size: 1rem;
     color: #D4D4D4;
     font-style: italic;
-    font-size: 1rem;
+    transition: all 300ms;
+}
+.itemHeader a:hover{
+    color: #169DBF;
+    transform: scale(1.2, 1.2);
+}
+.itemDestinos a{
+    color: #169DBF;
 }
 
 /* FOOTER */
@@ -88,122 +97,106 @@
 .main{
     height: 86vh;
     overflow-y: auto;
+    background-color: #f8f8f8;
 }
 
 .contenedorCuadros {
-display: flex;
-
-justify-content: space-evenly ;
-margin-top: 40px;
-
-}
-
-.cuadro {
-    width: 400px;
-    height: 550px;
-    background-color: rgb(255, 255, 255);
-    display: inline-flex;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 2px #cfcfcf solid;
-    box-shadow: 15px 15px 15px 5px  #ababab;
-  
-    
-    
-
-  }
-
-  #rioJaneiroOculto img{
-    max-width: 70%;
-    height: auto;
-    border-radius: 1%;
-
-    
-  }
-  #barilocheOculto img{
-    max-width: 70%;
-    height: auto;
-    border-radius: 1%;
-  }
-  
-  #NYOculto img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 1%;
-  }
-  
-  .imgCuadros{
-    margin-top: 20px;
-    width: 360px;
-    height: 400px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .oculto {
-    display: none;
-  }
-
-  .mostrar {
+    width: 1400px;
+    padding-left: 130px;
     display: flex;
-    justify-content: space-around;
-
-  }
-  #contenedorInfo{
-    width: 800px;
-    height: 100%;
-  }
-
-.contenidoCuadro h2{
-    font-size: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cuadro {
+    width: 350px;
+    height: 400px;
+    margin-top: 95px;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ececec;
+    border-radius: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.cuadro1{
+    border-top: 7px solid #169DBF;
+}
+.cuadro2{
+    border-top: 7px solid #3d7db8;
+}
+.cuadro3{
+    border-top: 7px solid #554EC8 ;
+}
+.contenidoCuadro{
+    width: 80%;
+    height: 80%;
+}
+.imgCuadros{
+    width: 100%;
+    height: 75%;
+}
+.h2{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
     border-radius: 6px;
+    margin-top: 12%;
     background-color: rgb(199, 199, 199) ;
-    max-width: 70%;
-    margin-left: 60px;
-
 }
 
-.contenidoOculto{
-    margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-   
+/* ------------------------------------------------------------------------------------- */
 
-   
+.oculto {
+    display: none;
 }
-
-
-
-figcaption {
-    font-style: italic;
-    font-size: 12px;
+.mostrar {
+    display: block;
 }
-
-#mapRio {
-     
-        width: 30%;
-        height: 100px;;
-    border-radius: 20px;
-
-     }
-
-     #mapBari {
-     
-        width: 30%;
-        height: 100px;
-    border-radius: 20px;
-
-     }
-     #mapNY{
-     
-        width: 30%;
-        height: 100px;
-    border-radius: 20px;
-
-     }
-
+.contenedorInfo{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: justify;
+}
+.title{
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.description{
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300;
+}
+.oferta{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 400;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+.title-gallery{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 400;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+.gallery img{
+    font-family: 'Quicksand', sans-serif;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
+}
+.gallery{
+    margin-bottom: 0.5em;
+    columns: 3 320px;
+    column-gap: 0.5em;
+}

@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts title destinos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Fonts title destinos -->
+
   <link rel="stylesheet" type="text/css" href="/css/destinos.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-  crossorigin=""></script>
   <title>Document</title>
 </head>
 
@@ -30,104 +31,169 @@
       </nav>
       <nav class="navDerecha">
         <ul class="listaHeader">
-          <li class="itemHeader"><a href="destinos.html">DESTINOS</a></li>
-          <li class="itemHeader"><a href="fechas.html">FECHAS</a></li>
-          <li class="itemHeader"><a href="financiacion.html">FINANCIACION</a></li>
-          <li class="itemHeader"><a href="wizard.html">RESERVA</a></li>
-          <li class="itemHeader"><a href="nosotros.html">NOSOTROS</a></li>
-          <li class="itemHeader"><a href="contactanos.html">CONTACTANOS</a></li>
+          <li class="itemHeader itemDestinos"><a href="destinos.html">DESTINOS</a></li>
+          <li class="itemHeader itemFechas"><a href="fechas.html">FECHAS</a></li>
+          <li class="itemHeader itemReserva"><a href="wizard.html">RESERVA</a></li>
+          <li class="itemHeader itemNosotros"><a href="nosotros.html">NOSOTROS</a></li>
+          <li class="itemHeader itemContactanos"><a href="contactanos.html">CONTACTANOS</a></li>
         </ul>
       </nav>
-    </div> 
+    </div>
   </header>
 
 
   <!-- MAIN INICIO -->
   <main class="main">
+
+
     <div class="contenedorCuadros">
-      <div class="cuadro" id="cuadro1">
+      <div class="cuadro cuadro1" id="cuadro1">
         <div class="contenidoCuadro">
           <img class="imgCuadros" src="/img/bariloche-destinos.jpg">
-          <h2>BARILOCHE</h2>
+          <h2 class="h2">BARILOCHE</h2>
         </div>
       </div>
 
-      <div class="cuadro" id="cuadro2">
+      <div class="cuadro cuadro2" id="cuadro2">
         <div class="contenidoCuadro">
           <img class="imgCuadros" src="/img/rioJaneiro-destinos.jpg">
-          <H2>RIO DE JANEIRO</H2>
+          <h2 class="h2">RIO DE JANEIRO</h2>
         </div>
       </div>
 
-      <div class="cuadro" id="cuadro3">
+      <div class="cuadro cuadro3" id="cuadro3">
         <div class="contenidoCuadro">
-          <img class="imgCuadros" src="/img/newYork-destinos.jfif">
-          <h2>NEW YORK</h2>
+          <img class="imgCuadros" src="/img/newYork-destinos.jpg">
+          <h2 class="h2">NEW YORK</h2>
         </div>
       </div>
     </div>
+
+
     <div class="contenidoOculto">
       <div id="barilocheOculto" class="oculto">
-        <div id="contenedorInfo">
-        <p>La ciudad de Bariloche se ubica al sur de Argentina, en los Andes Patagonicos. 
-          Reconocida a nivel nacional e internacional como uno de los mayores centros turisticos de Sudamerica. <br> 
-          Sus centros de esqui son el principal atractivo, siendo el más grande destino del continente, 
-          ubicados a lo largo de los distintos cerros que componene el paisaje andino, destacando el Cerro Tronador y el Cerrro Catedral.</p>
-        <img src="/img/Centro-Ski-Bariloche.jpg">
-        <figcaption>Centro de Esqui en Bariloche, Argentina</figcaption>
-        <p>Además, la ciudad se ubica junto al parque nacional Nahuel Huapi,fundado en 1934, es el más antiguo de los parque nacionales en la Republica Argentina.<br>
-          Reconocido por su impresionante paisaje natural, con el lago Nahuel Huapi y los numerosos valles, montañas, lagos y lagunas que componen el atractivo geografico.
-          Adornado tambien con el ecosistema de los Andes patagónicos, habitando por más de un millar de especies botánicas y unas 300 especies de animales vertebrados.</p>
-        <img src="/img/lake-nahuel-huapi-patagonia.jpg">
-        <figcaption>Lago Nahuel Huapi, Argentina</figcaption>
-      </div>
-      <div id="mapBari" style="height: 400px;"></div>
+        <div id="contenedorInfo" class="contenedorInfo">
 
+          <h1 class="title">Bariloche</h1>
+          <p class="description">Destino de viaje único en la Patagonia argentina con paisajes espectaculares, actividades al aire libre, deliciosa gastronomía, cultura y arquitectura únicas, y una hospitalidad excepcional. Si buscas una experiencia inolvidable, Bariloche es una excelente opción. ¡Descubre la belleza y encanto de Bariloche en tu próximo viaje!</p>
+          <h2 class="oferta">Te ofrecemos:</h2>
+          <p class="description">All inclusive en el Hotel Alma del Lago, ubicado en la costa del lago Nahuel Huapi y con vistas panorámicas a las montañas.</p>
+          <p class="description">Excursión 1: Circuito Chico, que recorre los principales atractivos naturales de Bariloche como el lago Nahuel Huapi, el Cerro Campanario y la península de Llao Llao.</p>
+          <p class="description">Excursión 2: Ascenso al Cerro Catedral, la montaña más alta de Bariloche, para disfrutar de vistas panorámicas impresionantes y practicar deportes de invierno si es la temporada adecuada.</p>
+          <p class="description">Excursión 3: Trekking en el Cerro López, una de las montañas más emblemáticas de Bariloche, para disfrutar de una caminata en contacto con la naturaleza y vistas panorámicas únicas.</p>
+          <p class="description">Excursión 4: Rafting en el río Manso, una actividad de aventura que te permitirá recorrer las aguas cristalinas del río Manso y disfrutar de la belleza natural de la región.</p>
+          <p class="description"> Este paquete de viaje a Bariloche te ofrece la oportunidad de alojarte en un hotel de calidad y disfrutar de una excursión diferente cada día para conocer los atractivos naturales de la región de manera intensa y variada.</p>
+          <h2 class="title-gallery">Galeria</h2>
+          <div class="gallery">
+            <img src="/img/galeriaBRC/Hotel bariloche frente.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche comedor.jpg">
+            <img src="/img/galeriaBRC/lago nahuel uapi.jpg">
+            <img src="/img/galeriaBRC/peninsula llao llao.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche bar.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche gimnasio.jpg">
+            <img src="/img/galeriaBRC/rio manzo 1.jpg">
+            <img src="/img/galeriaBRC/rio manzo 2.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche pileta.jpg">
+            <img src="/img/galeriaBRC/cerro campanario 1.jpg">
+            <img src="/img/galeriaBRC/cerro campanario 2.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche habitacion para dos.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche habitacion para cuatro.jpg">
+            <img src="/img/galeriaBRC/cerro catedral 1.jpg">
+            <img src="/img/galeriaBRC/cerro catedral 2.jpg">
+            <img src="/img/galeriaBRC/cerro catedral 3.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche baño habitacion.jpg">
+            <img src="/img/galeriaBRC/hotel bariloche baño 2 habitacion.jpg">
+            <img src="/img/galeriaBRC/cerro lopez 1.jpg">
+            <img src="/img/galeriaBRC/cerro lopez 2.jpg">
+            <img src="/img/galeriaBRC/cerro lopez 3.jpg">
+          </div>
 
+        </div>
       </div>
 
       <div id="rioJaneiroOculto" class="oculto">
-        <div id="contenedorInfo">
-        <p>Río de Janeiro es una ciudad ubicada en la costa este de Brasil, conocida por sus impresionantes paisajes,
-          playas icónicas y su vibrante cultura. La ciudad es la segunda más poblada de Brasil. <br>
-          Una de las principales atracciones turísticas de Río de Janeiro es el famoso Cristo Redentor, una estatua de
-          38 metros de altura ubicada en la cima del Corcovado, que ofrece vistas impresionantes de la ciudad. </p>
-        <img src="/img/cristo-redentor.jpg">
-        <figcaption>Cristo Redentor, Brasil</figcaption>
-        <p>Otra atracción popular es el Pan de Azúcar, un cerro que se eleva sobre la bahía de Guanabara y que también
-          ofrece vistas espectaculares. <br>
-          Río de Janeiro es también conocida por sus playas de arena blanca, incluyendo la famosa playa de Copacabana,
-          que atrae a turistas de todo el mundo. Además, la ciudad es el hogar del Carnaval de Río de Janeiro, uno de
-          los festivales más grandes y animados del mundo, que se celebra cada año en febrero o marzo.</p>
+        <div id="contenedorInfo" class="contenedorInfo">
+
+          <h1 class="title">Rio de Janeiro</h1>
+          <p class="description">Rio de Janeiro es un destino de viaje emocionante y diverso con playas icónicas, el famoso Carnaval, impresionante belleza natural, rica cultura y hospitalidad carioca. Si buscas una experiencia animada y llena de vida, Rio de Janeiro es una excelente opción. ¡Anímate a descubrir la magia de esta vibrante ciudad brasileña en tu próximo viaje!</p>
+          <h2 class="oferta">Te ofrecemos:</h2>
+          <p class="description">All inclusive en el Hotel Copacabana Palace, ubicado en la famosa playa de Copacabana. Ofrece servicios de lujo, habitaciones elegantes y acceso directo a la playa.</p>
+          <p class="description">Excursión 1: Subirás en tren hasta la cima del Corcovado, donde podrás disfrutar del Cristo Redentor, luego tomarás un teleférico que te llevará hasta la cima del Pan de Azúcar, desde donde disfrutarás de espectaculares vistas de la ciudad, las playas y la costa.</p>
+          <p class="description">Excursión 2: Paseo en Tranvía de Santa Teresa para explorar uno de los barrios más tradicionales de Río de Janeiro.</p>
+          <p class="description">Excursión 3: Emocionante excursión a la selva tropical de Tijuca, el pulmón verde más grande del mundo en una ciudad. Con un guía local, caminarás por senderos exuberantes, descubrirás la flora y fauna única y visitarás la cascada Taunay</p>
+          <p class="description">Excursión 4: Visita a las famosas playas de Copacabana e Ipanema para disfrutar del sol y el mar con show de Samba en Vivo para sumergirse en la cultura y música brasileña.</p>
+          <p class="description">¡Espero que disfrutes al máximo de tu viaje a Río de Janeiro, con emocionantes excursiones y una estancia inolvidable en un hotel de lujo!</p>
+          <h2 class="title-gallery">Galeria</h2>
+          <div class="gallery">
+            <img src="/img/galeriaRIO/hotel rio frente.jpg">
+            <img src="/img/galeriaRIO/hotel rio entrada.jpg">
+            <img src="/img/galeriaRIO/hotel rio bar.jpg">
+            <img src="/img/galeriaRIO/hotel rio comedor.jpg">
+            <img src="/img/galeriaRIO/hotel rio habitacion para 2.jpg">
+            <img src="/img/galeriaRIO/hotel rio habitacion 2.jpg">
+            <img src="/img/galeriaRIO/hotel rio baño.jpg">
+            <img src="/img/galeriaRIO/hotel rio baño 2.jpg">
+            <img src="/img/galeriaRIO/hotel rio pileta 4.jpg">
+            <img src="/img/galeriaRIO/cristo redentor.jpg">
+            <img src="/img/galeriaRIO/pan de azucar.jpg">
+            <img src="/img/galeriaRIO/Santa teresa.jpg">
+            <img src="/img/galeriaRIO/Santa teresa 2.jpg">
+            <img src="/img/galeriaRIO/Santa teresa 3.jpg">
+            <img src="/img/galeriaRIO/selva tijuca.jpg">
+            <img src="/img/galeriaRIO/selva tijuca 2.jpg">
+            <img src="/img/galeriaRIO/selva tijuca 3.jpg">
+            <img src="/img/galeriaRIO/ipanema.jpg">
+            <img src="/img/galeriaRIO/ipanema 2.jpg">
+            <img src="/img/galeriaRIO/ipanema 3.jpg">
+          </div>
+
         </div>
-          <div id="mapRio" style="height: 400px;"></div>
       </div>
 
       <div id="NYOculto" class="oculto">
-        <div id="contenedorInfo">
+        <div id="contenedorInfo" class="contenedorInfo">
 
-        <p>La ciudad de Nueva York se ubica en la costa este de los Estados Unidos y es la urbe más poblada del país. Centro financiero, politico y económico, sede de la Organizacion de las Naciones Unidas,
-            y de numerosas empresas e instituciones financieras de importancia global. 
-            Nueva York ejerce su influencia a escala global en los medios de comunicación, la política, la educación, la arquitectura, el entretenimiento, las artes y la moda. 
-            Por todo ello, es una de las ciudades más globalizadas del planeta, con una gran diversidad cultural. <br> 
-            Su atractivo más emblematico es la Estatua de la Libertad, ubicada en la isla de la Libertad al sur de la isla de Manhattan. Fue erigida como un regalo 
-            del pueblo francés al pueblo estadounidense en 1886, en conmemoracion del centenario de la Declaración de Independencia de los Estados Unidos, y tambien como un signo de amistad 
-            entre las dos naciones. </p>
-          <img src="/img/Estatua-de-la-Libertad-NuevaYork.jpeg">
-          <figcaption>Estatua de la Libertad, Estados Unidos.</figcaption>
-          <p>Otra de sus imagenes icónicas la ofrece la interseccion entre la Septima Avenida y la Avenida Broadway, en la cual se integra la zona de Times Square, 
-            la más centrica de la ciudad.<br>
-            Su nombre se debe al edificio One Times Square, antigua oficina del "New York Times", el periodico más reconocido de la ciudad. Hoy en día la zona paso a conformarla una multitud de edificios financieros, teatros, 
-            hoteles, restaurantes, salas de cines y estudios de television, volviendolo un centro multicultural, un simbolo del urbanismo de Manhattan y un lugar icónico de la ciudad.
-            Sus numerosos y extendidos carteles publicitarios le dan una animacion y luminosidad como pocas veces puede apreciarse en un paisaje urbano. <br>
-            Es por ello y dados sus multiples centros de interes, congregados a lo largo de la interseccion, que la zona de Times Square es un lugar obligado para todo visitante de la urbe estadounidense. </p>
-            <img src="/img/Times-Square-NYC.jpg">
-            <figcaption>Vista Panorámica de Times Square, Estados Unidos</figcaption>
+          <h1 class="title">Nueva York</h1>
+          <p class="description"> Uno de los destinos turísticos más populares del mundo, conocido por su cultura diversa, icónicos lugares, vibrante escena gastronómica, oportunidades de compras, vida nocturna animada, arquitectura e historia impresionantes, y una amplia variedad de eventos y festivales emocionantes. ¡Motivos de sobra para elegir a Nueva York como destino para tu próximo viaje!</p>
+          <h2 class="oferta">Te ofrecemos:</h2>
+          <p class="description">All inclusive en el The Plaza Hotel, un icónico hotel de lujo en el corazón de Manhattan.</p>
+          <p class="description">Excursión 1: Recorrido por los puntos emblemáticos de Nueva York, como Times Square, Central Park, la Estatua de la Libertad, el Empire State Building y el Puente de Brooklyn. Tour en autobús de dos pisos con paradas libres para explorar la ciudad a tu propio ritmo.</p>
+          <p class="description">Excursión 2: Tour guiado por los famosos museos como el Museo Metropolitano de Arte (MET), el Museo de Historia Natural o el Museo de Arte Moderno (MoMA), para disfrutar de su arte y cultura de renombre mundial.</p>
+          <p class="description">Excursión 3: Recorrido por los diversos barrios de Nueva York, como el bohemio Greenwich Village, el moderno SoHo, el histórico Harlem o el elegante Upper East Side. Paseo a pie por los barrios con un guía local para conocer su historia, cultura y arquitectura.</p>
+          <p class="description">Excursión 4: Visita a la famosa zona de Broadway y su animado ambiente teatral. Un espectáculo a eleccion para disfrutar de uno de los icónicos musicales o obras de teatro de Nueva York.</p>
+          <p class="description">Espero que disfrutes de este emocionante paquete de viaje a Nueva York, lleno de cultura, historia y diversión en la Gran Manzana.</p>
+          <h2 class="title-gallery">Galeria</h2>
+          <div class="gallery">
+            <img src="/img/galeriaNY/hotel ny frente.webp">
+            <img src="/img/galeriaNY/hotel ny frente 2.webp">
+            <img src="/img/galeriaNY/hotel ny comedor.webp">
+            <img src="/img/galeriaNY/hotel ny pileta.webp">
+            <img src="/img/galeriaNY/hotel ny sala estar.webp">
+            <img src="/img/galeriaNY/hotel ny habitacion.webp">
+            <img src="/img/galeriaNY/hotel ny habitacion 2.webp">
+            <img src="/img/galeriaNY/hotel ny baño 2.webp">
+            <img src="/img/galeriaNY/central park.webp">
+            <img src="/img/galeriaNY/central park 2.webp">
+            <img src="/img/galeriaNY/Broadway.webp">
+            <img src="/img/galeriaNY/Broadway 2.webp">
+            <img src="/img/galeriaNY/Empire State.webp">
+            <img src="/img/galeriaNY/estatua de la libertad.webp">
+            <img src="/img/galeriaNY/time square.webp">
+            <img src="/img/galeriaNY/Upper East Side.webp">
+            <img src="/img/galeriaNY/puente de brooklyn.webp">
+            <img src="/img/galeriaNY/soho.webp">
+            <img src="/img/galeriaNY/greenwich.webp">
+            <img src="/img/galeriaNY/harlem.webp">
+            <img src="/img/galeriaNY/museo de arte moderno.webp">
+            <img src="/img/galeriaNY/museo de historia natural.webp">
+            <img src="/img/galeriaNY/museo metropolitano de arte.webp">
+          </div>
+
         </div>
-        <div id="mapNY" style="height: 400px;"></div>
-
       </div>
     </div>
+
+
   </main>
   <script src="/js/destinos.js"></script>
   <!-- MAIN FINAL -->
@@ -146,4 +212,5 @@
   </footer>
 
 </body>
+
 </html>
