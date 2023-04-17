@@ -104,13 +104,14 @@ main {
     background-color: #d9d9d9;
 }
 
-.tituloForm{
+.tituloForm {
     display: block;
     text-align: center;
     margin: 50px;
     margin: 0;
     padding: 30px;
-    background-color: #70aee4;
+    background: linear-gradient(#4dd9fc, #a29df1);
+    text-shadow: 1px 1px 2px rgb(122, 159, 206); 
 }
 
 .form {

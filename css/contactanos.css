@@ -104,78 +104,110 @@
     margin: 50px;
     margin: 0;
     padding: 30px;
-    background-color: #70aee4;
+    background: linear-gradient(#4dd9fc, #a29df1);
+    text-shadow: 1px 1px 2px rgb(122, 159, 206); 
 }
 
 .ambosCont{
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 .contenedorIconos{
     float: left;
     width: 20%;
-    height: 50%;
+    height: 90%;
     margin-left: 50px;
     margin-right: none;
-    background-color: #d9d9d9;
+    background-color: #b9c5da;
     border: 2px #cfcfcf solid;
     display: grid;
-    grid-template-rows: 3, 1fr;
+    grid-template-rows: 4, 1fr;
     grid-template-columns: 2;
     grid-gap: 0;
     align-items: center;
     font-style: italic;
 }
 
-#icono1{
+#hora1{
     grid-column: 2;
     grid-row: 1;
+
+}
+
+#hora2{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#icono1{
+    grid-column: 1;
+    grid-row: 2;
 
 }
 #icono2{
-    grid-column: 2; 
-    grid-row: 2;
+    grid-column: 1; 
+    grid-row: 3;
 }
 #icono3{
+    grid-column: 1;
+    grid-row: 4;
+
+}
+#descr1{
+    grid-column: 2;
+    grid-row: 2;
+
+}
+#descr2{
     grid-column: 2;
     grid-row: 3;
-
 }
-#icono4{
-    grid-column: 1;
-    grid-row: 1;
-
-}
-#icono5{
-    grid-column: 1;
-    grid-row: 2;
-}
-#icono6{
-    grid-column: 1;
-    grid-row: 3;
+#descr3{
+    grid-column: 2;
+    grid-row: 4;
 }
 
 .imgIcono{
     height: 30px;
-    background-color: #d9d9d9;
+    background-color: #b9c5da;
     margin: 5px;
 }
 
 
 .formCont {
+    display: flex;
+    flex-direction: column;
     float: right;
     width: 70%;
     height: 50%;
-    padding: 20px;
-    margin-left: none;
+    padding: 20px 50px;
+    margin-left: 20px;
     margin-right: 20px;
-    background-color: #d9d9d9;
+    background-color: #fff;
     border: 2px #cfcfcf solid;
-    flex-wrap:wrap;
 }
 
+
 .subtituloForm {
-    margin-bottom: 4%;
+    margin-bottom: 2%;
+    font-size: xx-large;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    min-height: 100%;
+    padding: 0 0 10px;
+    gap: 10px;
+    align-items: start;
+  }
+
+.formItem {
+    display: flex;
+    flex-direction: column;
 }
 
 fieldset{
@@ -202,16 +234,36 @@ input {
     border-radius: 4px;
     background: #f9f9f9;
     height: 30px;
+    min-width: 450px;
     padding: 0 16px;
     outline: none; 
 }
-textarea{
+
+textarea {
     border: 2px solid #8d8d8d;
     overflow: auto;
-    min-width: none;
+    min-width: 450px;
+    min-height: 100px;
     max-width: 100%;
     max-height: 25%;
     
 }
 
-   
+.btnSubmit {
+    border-radius: 4px;
+    border: 2px solid transparent;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50%;
+    height: 50%;
+    background-color: #1e4dba;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+
+.aclaracion {
+    color: #3b3c3d;
+    font-size: small;
+}
