@@ -40,56 +40,61 @@
  
    
     <main class="main">
-        <div class="contenedorIconos">
-            <div class="icono" id="icono1">
-                <p>viajesHoy@gmail.com</p>
-            </div>
-            <div class="icono" id="icono2">
-                <p>Avenida Colon 01 Córdoba Argentina</p>
-            </div>
-            <div class="icono" id="icono3">
-                <p>(O351)-XXXX-XXX</p>
-            </div>
-            <div class="icono" id="icono6">
-                <img class="imgIcono" src="/img/telefono-contact.png">
-            </div>
-            <div class="icono" id="icono5">
-                <img class="imgIcono" src="/img/pin.png">
-            </div>
-            <div class="icono" id="icono4">
-                <img class="imgIcono" src="/img/correo.png">
+        <h1 class="tituloCont">Contactanos</h1>
+        <div class="ambosCont">
+            <aside class="contenedorIconos">
+                <div class="icono" id="icono1">
+                    <p>viajesHoy@gmail.com</p>
+                </div>
+                <div class="icono" id="icono2">
+                    <p>Avenida Colon 01 <br> Córdoba, Argentina</p>
+                </div>
+                <div class="icono" id="icono3">
+                    <p>(O351)-XXXX-XXX</p>
+                </div>
+                <div class="icono" id="icono6">
+                    <img class="imgIcono" src="/img/telefono-contact.png">
+                </div>
+                <div class="icono" id="icono5">
+                    <img class="imgIcono" src="/img/pin.png">
+                </div>
+                <div class="icono" id="icono4">
+                    <img class="imgIcono" src="/img/correo.png">
+                </div>
+            </aside>
+            
+        
+            <div class="formCont">
+                <h2 class="subtituloForm">Introduce tus datos</h2>
+                <form>
+                    <fieldset>
+                        <div>
+                            <label for="name" class="formLabel">Nombre:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="lastname" class="formLabel">Apellido:</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                        <div>
+                            <label for="email" class="formLabel">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email">
+                        </div>                        
+                        <div>
+                            <label for="asunto" class="formLabel">Asunto</label>
+                            <input type="asunto" id="asunto" name="asunto">
+                        </div>
+                        <div>
+                            <label for="mensaje" class="formLabel">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        
+                        <input class="submitBtn" type="submit" value="Send">
+
+                    </fieldset>
+                </form>
             </div>
         </div>
-        
-       
-        <aside class="aside">
-            <form>
-                <fieldset>
-                    <div>
-                        <div class="contenedorContacto">
-                            <div>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" id="name" name="name">
-                            </div>
-                            <div>
-                                <label for="correo">Correo Electrónico:</label>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div>
-                                <label for="asunto" >Asunto:</label>
-                                <input type="asunto" id="asunto" name="asunto">
-                            </div>
-                            <div>
-                                <label for="mensaje">Mensaje:</label>
-                                <textarea id="mensaje" name="mensaje"></textarea>
-                                <input type="submit" value="Send">  
-                            </div>
-                        </div>
-                  
-                </fieldset>
-            </form>
-        </aside>
-
         
             
     </main>
