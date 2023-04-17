@@ -85,7 +85,7 @@
 
 /* MAIN */
 
-.main{
+.main {
     height: 86vh;
     overflow-y: auto;
 }
@@ -94,23 +94,36 @@
 main {
     margin: 0;
     padding: 0;
-  }
-  
+    z-index: 100;
+    height: 100%;
+    background-image: url(/img/bariloche-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #d9d9d9;
+}
+
 .tituloForm{
     display: block;
     text-align: center;
     margin: 50px;
+    margin: 0;
+    padding: 30px;
+    background-color: #70aee4;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  max-width: 580px;
-  height: 100vh;
+  max-width: 50%;
+  min-height: 100%;
   margin: 0 auto;
-  gap: 20px;
-  justify-content: center auto;
+  padding: 50px;
+  gap: 40px;
+  background-color: #fff;
 }
+
 .form-item {
   display: flex;
   flex-direction: column;
@@ -179,7 +192,6 @@ main {
   position: relative;
   display: flex;
   width: 100%;
-  margin-top: 20px;
 }
 .wizard:before {
   content: "";
@@ -227,10 +239,15 @@ fieldset {
   border: none;
 }
 
+.tituloResumen {
+  display: inline-block;
+  text-align: center;
+}
+
 .fieldsetResumen {
   border: solid;
-  padding: 30px;
-  margin: 0 -20%;
+  padding: 0;
+  width: 0;
 }
 
 .listaResumen {
@@ -243,21 +260,20 @@ ul.listaResumen {
   display: block;
   font-weight: bolder;
   columns: 3;
-  border: dotted;
-  align-self: center;
+  border-top: solid;
+  align-self: auto;
+  gap: 1px;
 }
 
 ul.listaResumen li {
   display: block;
   padding: 10px;
-  font-size: larger;
 }
 
 ul.listaResumen li span {
   display: block;
   color: #5f5f9f;
-  padding: 5px;
-  font-weight: 700;
+  padding: 5px 0;
 }
 
 #btnEnviar {
