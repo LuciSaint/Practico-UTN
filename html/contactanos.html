@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/contactanos.css">
+    <script src="/js/contactanos.js"></script>
     <title>Viaja Hoy</title>
 </head>
 
@@ -39,59 +40,67 @@
  
    
     <main class="main">
-        <h1 class="tituloCont">Contactanos</h1>
         <div class="ambosCont">
             <aside class="contenedorIconos">
-                <div class="icono" id="icono1">
+                <div class="iconoDesc" id="hora1">
+                    <h3>Horario de atención:</h3>
+                    <p>Lunes a Viernes 9-18hs</p>
+                </div>
+                <div class="iconoDesc" id="hora2">
+                    <img class="imgIcono" src="/img/reloj.png">
+                </div>
+                <div class="iconoDesc" id="descr1">
                     <p>viajesHoy@gmail.com</p>
                 </div>
-                <div class="icono" id="icono2">
+                <div class="iconoDesc" id="descr2">
                     <p>Avenida Colon 01 <br> Córdoba, Argentina</p>
                 </div>
-                <div class="icono" id="icono3">
+                <div class="iconoDesc" id="descr3">
                     <p>(O351)-XXXX-XXX</p>
                 </div>
-                <div class="icono" id="icono6">
-                    <img class="imgIcono" src="/img/telefono-contact.png">
-                </div>
-                <div class="icono" id="icono5">
-                    <img class="imgIcono" src="/img/pin.png">
-                </div>
-                <div class="icono" id="icono4">
+                <div class="iconoDesc" id="icono1">
                     <img class="imgIcono" src="/img/correo.png">
                 </div>
+                <div class="iconoDesc" id="icono2">
+                    <img class="imgIcono" src="/img/pin.png">
+                </div>
+                <div class="iconoDesc" id="icono3">
+                    <img class="imgIcono" src="/img/telefono-contact.png">
+                </div>    
+                
             </aside>
             
         
             <div class="formCont">
                 <h2 class="subtituloForm">Introduce tus datos</h2>
-                <form>
-                    <fieldset>
-                        <div>
-                            <label for="name" class="formLabel">Nombre:</label>
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div>
-                            <label for="lastname" class="formLabel">Apellido:</label>
-                            <input type="text" id="lastname" name="lastname">
-                        </div>
-                        <div>
-                            <label for="email" class="formLabel">Correo Electrónico:</label>
-                            <input type="email" id="email" name="email">
-                        </div>                        
-                        <div>
-                            <label for="asunto" class="formLabel">Asunto</label>
-                            <input type="asunto" id="asunto" name="asunto">
-                        </div>
-                        <div>
-                            <label for="mensaje" class="formLabel">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje"></textarea>
-                        </div>
-                        
-                        <input class="submitBtn" type="submit" value="Send">
-
-                    </fieldset>
+                <form class="form">
+                    <div class="formItem">
+                        <label for="name" class="formLabel">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Introduzca su nombre" required>
+                    </div>
+                    <div class="formItem">
+                        <label for="lastname" class="formLabel">Apellido:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Introduzca su apellido" required>
+                    </div>
+                    <div class="formItem">
+                        <label for="email" class="formLabel">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Introduzca su correo electrónico" required>
+                    </div>    
+                    <div class="formItem">
+                        <label for="phone" class="formLabel">Teléfono:</label>
+                        <input type="tel" id="phone" name="phone"  pattern="[0-9]+" placeholder="Código de Area + Numero (este campo solo admite números)" required>
+                    </div>                              
+                    <div class="formItem">
+                        <label for="asunto" class="formLabel">Asunto</label>
+                        <input type="asunto" id="asunto" name="asunto" placeholder="Coloque un asunto que resuma su consulta"  required>
+                    </div>
+                    <div class="formItem">
+                        <label for="mensaje" class="formLabel">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="  Escriba aqui su consulta" required></textarea>
+                    </div>
+                    <button class="btnSubmit" type="submit" id="btnSubmit">Enviar</button>
                 </form>
+                <p class="aclaracion">Una vez enviada su consulta, se le notificará su respuesta al cabo de 72hs. </p>
             </div>
         </div>
         
