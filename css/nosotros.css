@@ -50,106 +50,41 @@
 /* ---------------------------------------------------------------------------------------------------------- */
 
 .contenedorStaff{
-    height: 100%;
-    width: 90%;
-    margin: 5%;
+    width: 100%;
+    margin: 5% auto 0;
+    padding:  2% 5% 3%;
+    background-color: #ffffff8a;
 }
 h1{
-    margin: 20px;
+    margin-bottom: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive; 
-    font-size: 2.5rem;
-    padding-top: 35px;
-    padding-bottom: 5%;
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;    
+}
+.columna{
     display: flex;
-    justify-content: center;
-    font-style: italic;
-    
-    
-}
-.columna1{
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    
-    
-}
-.presentacion1{
-    height: 20%;
-    margin-left: 20%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
+    width: 100%;
 }
-.presentacion2{
-    height: 20%;
-    margin-left: 5%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: aliceblue;
-    
+.presentacion{
+    width: 19%;
+    height: 350px;
+    background: linear-gradient(#554EC8,#169DBF,aliceblue 40%) ;
+    border-radius: 3%;
+    box-shadow: 5px 10px 10px rgba(67, 67, 96, 0.413);
 }
-
-
-
-
 .usuario{
-    width: 50%;
-    margin: 25%
+    width: 55%;
+    margin: 10% 22.5%;
 }
-
-.columna2{
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    background-color: aliceblue;
-}
-
-.presentacion3{
-    height: 20%;
-    margin: auto 5% 5% 5%;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 2px solid #8d8d8d;
-    border-radius: 4px;
-        
-    
-}
-.presentacion4{
-    height: 20%;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 2px solid #8d8d8d;
-    border-radius: 4px;
-        
-    
-}
-.presentacion5{
-
-    margin: auto 5% 5% 5%;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 2px solid #8d8d8d;
-    border-radius: 4px;
-        
-    
-}
-
 .nombreUsuario{
-    padding: 5% 5%;
-    margin-bottom: 0;
+    padding: 0 5%;
     text-align: center;
 }
-
 .descripcionUsuario{
-    margin-bottom: 20%;
+    padding:  10% 5%;
     text-align: center;
 }
 
