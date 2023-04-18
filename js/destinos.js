@@ -1,3 +1,4 @@
+addEventListener("DOMContentLoaded", (event) => {
 const cuadros = document.querySelectorAll('.cuadro');
 const informacionesOcultas = document.querySelectorAll('.oculto');
 
@@ -21,3 +22,5 @@ for (let i = 0; i < cuadros.length; i++) {
   const informacionOculta = informacionesOcultas[i];
   mostrarInformacion(cuadro, informacionOculta);
 }
+
+});
