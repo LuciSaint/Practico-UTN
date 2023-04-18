@@ -56,7 +56,7 @@
 }
 h1{
     margin: 20px;
-    font-family:'Caveat', cursive; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive; 
     font-size: 2.5rem;
     padding-top: 35px;
     padding-bottom: 5%;
@@ -144,8 +144,15 @@ h1{
     
 }
 
+.nombreUsuario{
+    padding: 5% 5%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .descripcionUsuario{
-    margin: 20%;
+    margin-bottom: 20%;
+    text-align: center;
 }
 
 
