@@ -97,7 +97,8 @@
 .main{
     height: 86vh;
     overflow-y: auto;
-    background-color: #f8f8f8;
+    background-image: url(/img/MarDelPlata\ Blur.jpg);
+    background-size: 100%;    
 }
 
 .contenedorCuadros {
