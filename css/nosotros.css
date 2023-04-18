@@ -7,26 +7,24 @@
 .main{
     height: 86vh;
     overflow-y: auto;
-    overflow: scroll;
     background-image: url("/img/Patio_Olmos\ blur.jpg");
     background-size: 100%;    
 }
 
 .contenedor{
-    height: 100%;
-    width: 90%;
-    margin: 3% 0% 5% 5%;
+    height: 500px;
+    width: 1000px;
+    margin: 60px auto 0;
     background-image: url("/img/postal.jpg");
-    background-size: cover;
-    display:grid;
-    gap:10px;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #ececec;
 
 }
 .texto1{
-    margin-top: 30%;
+    margin-top: 24%;
     grid-template-columns: 1;
+    padding: 0 6% 0 10%;
     
 }
 .texto1 p{
@@ -34,21 +32,23 @@
     font-weight: 100;
     font-size: 0.8vw;
     margin-bottom: 3%;
-    margin-left: 7%;
     text-align: justify;
     color: #121212cb;
 }
 .texto2{
-    margin-top: 60%;
+    margin-top: 61.5%;
     font-style: italic;
-}
-   
+    padding: 0 0 0 20%;
+}   
 .texto2 p{
+    font-family: 'Merriweather', serif;
     font-size: 25px;
-    margin-bottom: 9px;
+    margin-bottom: 1%;
     grid-template-columns: 2;
 
 }
+/* ---------------------------------------------------------------------------------------------------------- */
+
 .contenedorStaff{
     height: 100%;
     width: 90%;
