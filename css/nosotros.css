@@ -22,7 +22,7 @@
 
 }
 .texto1{
-    margin-top: 24%;
+    margin-top: 22%;
     grid-template-columns: 1;
     padding: 0 6% 0 10%;
     
@@ -30,7 +30,7 @@
 .texto1 p{
     font-family: 'Merriweather', serif;
     font-weight: 100;
-    font-size: 0.8vw;
+    font-size: 0.8rem;
     margin-bottom: 3%;
     text-align: justify;
     color: #121212cb;
@@ -42,8 +42,8 @@
 }   
 .texto2 p{
     font-family: 'Merriweather', serif;
-    font-size: 25px;
-    margin-bottom: 1%;
+    font-size: 1.4rem;
+    margin-bottom: 2%;
     grid-template-columns: 2;
 
 }
