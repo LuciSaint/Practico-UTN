@@ -18,8 +18,8 @@
 
 .ambosCont{
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .contenedorIconos{
     float: left;
@@ -90,7 +90,7 @@
     float: right;
     width: 70%;
     height: 50%;
-    padding: 20px 50px;
+    padding: 10px 50px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: #fff;
@@ -99,7 +99,7 @@
 
 
 .subtituloForm {
-    margin-bottom: 2%;
+    margin-bottom: 0.5%;
     font-size: xx-large;
 }
 
@@ -109,7 +109,7 @@
     max-width: 50%;
     min-height: 100%;
     padding: 0 0 10px;
-    gap: 10px;
+    gap: 9.7px;
     align-items: start;
   }
 
