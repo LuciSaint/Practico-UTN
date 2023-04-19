@@ -1,3 +1,4 @@
+addEventListener("DOMContentLoaded", (event) => {
 const sliderContainer = document.getElementById('slider-container');
 const slider = document.getElementById('slider');
 const buttonLeft = document.getElementById('button-left');
@@ -66,3 +67,4 @@ buttonLeft.addEventListener('click', () => moveSlide(DIRECTION.LEFT));
 slider.addEventListener('transitionend', reorderSlide);
 
 reorderSlide();
+});

@@ -155,6 +155,10 @@ fieldset {
   text-align: center;
 }
 
+#printResumen {
+  align-self: center;
+}
+
 .fieldsetResumen {
   margin: 20px 0px;
   border: solid;

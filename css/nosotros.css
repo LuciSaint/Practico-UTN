@@ -10,7 +10,6 @@
     background-image: url("/img/Patio_Olmos\ blur.jpg");
     background-size: 100%;    
 }
-
 .contenedor{
     height: 500px;
     width: 1000px;
@@ -41,13 +40,13 @@
     padding: 0 0 0 20%;
 }   
 .texto2 p{
+    
     font-family: 'Merriweather', serif;
     font-size: 1.4rem;
     margin-bottom: 2%;
     grid-template-columns: 2;
 
 }
-
 .contenedorStaff{
     width: 100%;
     margin: 5% auto 0;
